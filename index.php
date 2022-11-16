@@ -28,7 +28,7 @@
     <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
         <div class="container px-4 px-lg-5">
             <img src="assets/img/Dove Color Logo.png" alt="" width="auto" height="50px">
-            <a class="navbar-brand" href="index.html">Živa Nada</a>
+            <a class="navbar-brand" href="index.php">Živa Nada</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
@@ -38,8 +38,8 @@
                 <ul class="navbar-nav ms-auto py-4 py-lg-0">
                     <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="">O Nama</a></li>
                     <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="">Objave</a></li>
-                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="kalendar.html">Kalendar</a></li>
-                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="lokacija.html">Lokacija</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="kalendar.php">Kalendar</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="lokacija.php">Lokacija</a></li>
                     <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="">Login</a></li>
                     <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="">Registracija</a></li>
                 </ul>
@@ -103,7 +103,7 @@
             <div class="col-md-10 col-lg-8 col-xl-7">
                 <!-- Post preview-->
                 <div class="announcement-preview">
-                    <a href="announcement.html">
+                    <a href="announcement.php">
                         <h2 class="post-title">Ovo je primjer obavijesti</h2>
                         <h3 class="post-subtitle">Tu ide mali opis o dogadaju</h3>
                     </a>
@@ -118,7 +118,7 @@
 
                 <!-- Post preview-->
                 <div class="announcement-preview">
-                    <a href="announcement.html">
+                    <a href="announcement.php">
                         <h2 class="post-title">Ovo je primjer obavijesti</h2>
                         <h3 class="post-subtitle">Tu ide mali opis o dogadaju</h3>
                     </a>
@@ -133,7 +133,7 @@
 
                 <!-- Post preview-->
                 <div class="announcement-preview">
-                    <a href="announcement.html">
+                    <a href="announcement.php">
                         <h2 class="post-title">Ovo je primjer obavijesti</h2>
                         <h3 class="post-subtitle">Tu ide mali opis o dogadaju</h3>
                     </a>
@@ -148,7 +148,7 @@
 
                 <!-- Post preview-->
                 <div class="announcement-preview">
-                    <a href="announcement.html">
+                    <a href="announcement.php">
                         <h2 class="post-title">Ovo je primjer obavijesti</h2>
                     </a>
                     <p class="post-meta">
@@ -162,7 +162,7 @@
 
                 <!-- Post preview-->
                 <div class="announcement-preview">
-                    <a href="announcement.html">
+                    <a href="announcement.php">
                         <h2 class="post-title">Ovo je primjer obavijesti</h2>
                     </a>
                     <p class="post-meta">
