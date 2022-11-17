@@ -1,3 +1,7 @@
+<?php 
+    require_once('protected/config.inc.php');
+    require_once('protected/functions.inc.php');
+?>
 <!DOCTYPE html>
 <html lang="hr">
 
@@ -99,112 +103,40 @@
                     </div>
                 </div>
             </div>
-
             <div class="col-md-10 col-lg-8 col-xl-7">
-                <!-- Post preview-->
-                <div class="announcement-preview">
-                    <a href="announcement.php">
-                        <h2 class="post-title">Ovo je primjer obavijesti</h2>
-                        <h3 class="post-subtitle">Tu ide mali opis o dogadaju</h3>
-                    </a>
-                    <p class="post-meta">
-                        Objavio
-                        <a href="#!">Kyler England</a>
-                        na 24/9/2022
-                    </p>
-                </div>
-                <!-- Divider-->
-                <hr class="my-4" />
+            <?php 
+                try{
+                    $pdo = new PDO(DBCONNSTRING,DBUSER,DBPASS);
+                    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-                <!-- Post preview-->
-                <div class="announcement-preview">
-                    <a href="announcement.php">
-                        <h2 class="post-title">Ovo je primjer obavijesti</h2>
-                        <h3 class="post-subtitle">Tu ide mali opis o dogadaju</h3>
-                    </a>
-                    <p class="post-meta">
-                        Objavio
-                        <a href="#!">Kyler England</a>
-                        na 24/9/2022
-                    </p>
-                </div>
-                <!-- Divider-->
-                <hr class="my-4" />
-
-                <!-- Post preview-->
-                <div class="announcement-preview">
-                    <a href="announcement.php">
-                        <h2 class="post-title">Ovo je primjer obavijesti</h2>
-                        <h3 class="post-subtitle">Tu ide mali opis o dogadaju</h3>
-                    </a>
-                    <p class="post-meta">
-                        Objavio
-                        <a href="#!">Kyler England</a>
-                        na 24/9/2022
-                    </p>
-                </div>
-                <!-- Divider-->
-                <hr class="my-4" />
-
-                <!-- Post preview-->
-                <div class="announcement-preview">
-                    <a href="announcement.php">
-                        <h2 class="post-title">Ovo je primjer obavijesti</h2>
-                    </a>
-                    <p class="post-meta">
-                        Objavio
-                        <a href="#!">Kyler England</a>
-                        na 18/9/2022
-                    </p>
-                </div>
-                <!-- Divider-->
-                <hr class="my-4" />
-
-                <!-- Post preview-->
-                <div class="announcement-preview">
-                    <a href="announcement.php">
-                        <h2 class="post-title">Ovo je primjer obavijesti</h2>
-                    </a>
-                    <p class="post-meta">
-                        Objavio
-                        <a href="#!">Kyler England</a>
-                        na 18/9/2022
-                    </p>
-                </div>
-                <!-- Divider-->
-                <hr class="my-4" />
-
+                    $sql = "SELECT * FROM posts";
+                    $statement = $pdo->prepare($sql);
+                    $statement->execute();
+                    echo outputPost($statement);
+                }
+                catch(PDOException $e){
+                    die( $e->getMessage() );
+                }
+                finally {
+                    $pdo = null;
+                }
+            ?>
                 <!-- Post preview-->
                 <!-- <div class="announcement-preview">
-                        <a href="announcement.html">
-                            <h2 class="post-title">Science has not yet mastered prophecy</h2>
-                            <h3 class="post-subtitle">We predict too much for the next year and yet far too little for the next ten.</h3>
-                        </a>
-                        <p class="post-meta">
-                            Posted by
-                            <a href="#!">Start Bootstrap</a>
-                            on August 24, 2022
-                        </p>
-                    </div> -->
-                <!-- Divider-->
-                <!-- <hr class="my-4" /> -->
-                <!-- Post preview-->
-                <!-- <div class="announcement-preview">
-                        <a href="announcement.html">
-                            <h2 class="post-title">Failure is not an option</h2>
-                            <h3 class="post-subtitle">Many say exploration is part of our destiny, but it’s actually our duty to future generations.</h3>
-                        </a>
-                        <p class="post-meta">
-                            Posted by
-                            <a href="#!">Start Bootstrap</a>
-                            on July 8, 2022
-                        </p>
-                    </div> -->
+                    <a href="announcement.php">
+                        <h2 class="post-title">Ovo je primjer obavijesti</h2>
+                        <h3 class="post-subtitle">Tu ide mali opis o dogadaju</h3>
+                    </a>
+                    <p class="post-meta">
+                        Objavio
+                        <a href="#!">Kyler England</a>
+                        na 24/9/2022
+                    </p>
+                </div> -->
                 <!-- Divider-->
                 <!-- <hr class="my-4" /> -->
                 <!-- Pager-->
-                <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#!">Starije
-                        objave →</a></div>
+                <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#!">Starije objave →</a></div>
             </div>
         </div>
     </div>
@@ -214,14 +146,6 @@
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-md-10 col-lg-8 col-xl-7">
                     <ul class="list-inline text-center">
-                        <!-- <li class="list-inline-item">
-                                <a href="#!">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fas fa-circle fa-stack-2x"></i>
-                                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li> -->
                         <li class="list-inline-item">
                             <a href="https://www.facebook.com/ZivaNadaSplit">
                                 <span class="fa-stack fa-lg">
