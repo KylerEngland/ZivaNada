@@ -1,6 +1,6 @@
 <?php 
-    require_once('protected/config.inc.php');
     require_once('protected/functions.inc.php');
+    include_once('navbar.php');
 ?>
 <!DOCTYPE html>
 <html lang="hr">
@@ -28,41 +28,6 @@
 </head>
 
 <body>
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
-        <div class="container px-4 px-lg-5">
-            <img src="assets/img/Dove Color Logo.png" alt="" width="auto" height="50px">
-            <a class="navbar-brand" href="index.php">Živa Nada</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto py-4 py-lg-0">
-                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="">O Nama</a></li>
-                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="">Objave</a></li>
-                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="kalendar.php">Kalendar</a></li>
-                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="lokacija.php">Lokacija</a></li>
-                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="">Login</a></li>
-                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="">Registracija</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- Page Header-->
-    <header class="masthead" style="background-image: url('assets/img/vidilica2.jpg')">
-        <div class="container position-relative px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-md-10 col-lg-8 col-xl-7">
-                    <div class="site-heading">
-                        <h1>Živa Nada</h1>
-                        <span class="subheading">Kristova Crkva</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
     <!-- Main Content-->
     <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
@@ -83,93 +48,38 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
-                            <div class="modal-body">
-                                <form>
+
+
+                            <form name="newPost" action="submitPost.inc.php" method="post">
+                                <div class="modal-body">
                                     <div class="mb-3">
-                                      <label for="titula" class="col-form-label">Titula:</label>
-                                      <input type="text" class="form-control" id="titula">
+                                      <label for="title" class="col-form-label">Titula:</label>
+                                      <input type="text" class="form-control" name="title">
                                     </div>
                                     <div class="mb-3">
-                                      <label for="opis" class="col-form-label">Opis:</label>
-                                      <textarea class="form-control" id="opis"></textarea>
+                                      <label for="description" class="col-form-label">Opis:</label>
+                                      <textarea class="form-control" name="description"></textarea>
                                     </div>
-                                  </form>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zatvori</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
-                            </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zatvori</button>
+                                    <button type="submit" class="btn btn-primary">Objavi</button>
+                                </div>
+                            </form>
+
+
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-10 col-lg-8 col-xl-7">
-            <?php 
-                try{
-                    $pdo = new PDO(DBCONNSTRING,DBUSER,DBPASS);
-                    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-                    $sql = "SELECT * FROM posts";
-                    $statement = $pdo->prepare($sql);
-                    $statement->execute();
-                    echo outputPost($statement);
-                }
-                catch(PDOException $e){
-                    die( $e->getMessage() );
-                }
-                finally {
-                    $pdo = null;
-                }
-            ?>
-                <!-- Post preview-->
-                <!-- <div class="announcement-preview">
-                    <a href="announcement.php">
-                        <h2 class="post-title">Ovo je primjer obavijesti</h2>
-                        <h3 class="post-subtitle">Tu ide mali opis o dogadaju</h3>
-                    </a>
-                    <p class="post-meta">
-                        Objavio
-                        <a href="#!">Kyler England</a>
-                        na 24/9/2022
-                    </p>
-                </div> -->
-                <!-- Divider-->
-                <!-- <hr class="my-4" /> -->
-                <!-- Pager-->
+                <?=showPosts();?>
                 <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#!">Starije objave →</a></div>
             </div>
         </div>
     </div>
-    <!-- Footer-->
-    <footer class="border-top">
-        <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-md-10 col-lg-8 col-xl-7">
-                    <ul class="list-inline text-center">
-                        <li class="list-inline-item">
-                            <a href="https://www.facebook.com/ZivaNadaSplit">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                    <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <!-- <li class="list-inline-item">
-                                <a href="#!">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fas fa-circle fa-stack-2x"></i>
-                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li> -->
-                    </ul>
-                    <div class="small text-center text-muted fst-italic">Telefon: +385 95 350 0504</div>
-                    <div class="small text-center text-muted fst-italic">Mail: zivanada@gmail.com</div>
-                    <div class="small text-center text-muted fst-italic">Adresa: Tavelićeva 46, Split, Croatia</div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <!-- Footer file -->
+    <?php include_once('footer.php')?>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
