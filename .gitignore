@@ -1,3 +1,4 @@
 protected/config.inc.php
 protected/functions.inc.php
 protected/DB.php
+protected/submitPost.inc.php

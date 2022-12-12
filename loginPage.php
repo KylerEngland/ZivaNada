@@ -94,10 +94,6 @@
                         <!-- Submit button -->
                         <button type="submit" class="btn btn-primary btn-block mb-4">Prijavi se</button>
 
-                        <!-- Register buttons -->
-                        <div class="text-center">
-                            <p>Novi profil? <a href="#!">Registriraj se</a></p>
-                        </div>
                     </form>
                 </div>
                 <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="tab-register">

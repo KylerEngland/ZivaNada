@@ -62,7 +62,7 @@
                                     aria-label="Close"></button>
                             </div>
 
-                            <form name="newPost" action="submitPost.inc.php" method="post">
+                            <form name="newPost" action="protected/submitPost.inc.php" method="post">
                                 <div class="modal-body">
                                     <div class="mb-3">
                                       <label for="title" class="col-form-label">Titula:</label>
