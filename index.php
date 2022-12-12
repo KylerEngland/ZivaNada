@@ -28,7 +28,6 @@
 </head>
 
 <body>
-
     <!-- Page Header-->
     <header class="masthead" style="background-image: url('assets/img/vidilica2.jpg')">
         <div class="container position-relative px-4 px-lg-5">
@@ -42,7 +41,6 @@
             </div>
         </div>
     </header>
-
     <!-- Main Content-->
     <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
@@ -64,7 +62,6 @@
                                     aria-label="Close"></button>
                             </div>
 
-
                             <form name="newPost" action="submitPost.inc.php" method="post">
                                 <div class="modal-body">
                                     <div class="mb-3">
@@ -81,8 +78,6 @@
                                     <button type="submit" class="btn btn-primary">Objavi</button>
                                 </div>
                             </form>
-
-
                         </div>
                     </div>
                 </div>

@@ -40,7 +40,7 @@
 <body>
 
     <!-- Page Header-->
-    <header class="masthead" style="background-image: url('assets/img/vidilica2.jpg')">
+    <header class="masthead" style="background-image: url('assets/img/riva.jpg')">
         <div class="container position-relative px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-md-10 col-lg-8 col-xl-7">
@@ -81,21 +81,18 @@
                             const mainMarker = L.marker([43.51105, 16.4801], {icon: myIcon});
                             mainMarker.addTo(map);
 
-                            L.marker([43.511671, 16.482496]).addTo(map);
-                            L.marker([43.512203, 16.480561]).addTo(map);
-                            L.marker([43.511114, 16.480528]).addTo(map);
+                            const firstParking = L.marker([43.511671, 16.482496]);
+                            firstParking.addTo(map);
+                            firstParking.bindPopup("<p>Tu je najveci parking, ali najdalje je od crkve. Od tu je najlakse prosetati do McDonalds-a pa od tu doci crkvi.</p>");
+
+                            const secondParking = L.marker([43.512203, 16.480561]).addTo(map);
+                            secondParking.bindPopup("<p>Crkva najlakse pronade dolazeci sa Visoke ulice. Sa Visoke ulize se samo proseta oko gornji dio zgrade, pa se onda crkva nalazi odmah desno.</p>");
+
+                            const thirdParking = L.marker([43.511114, 16.480528]).addTo(map);
+                            thirdParking.bindPopup("<p>Ako zelite, mozete parkiratu u parking garazi do McDonalds-a. Od tu je vrlo lako prosetati na lijevoj strani zgrade, pa je crkva onda odmah desno.</p>");
+
+
                         </script>
-                    </div>
-                    <div class="d-flex justify-content-begin mb-4">
-                        <h3 class="post-subtitle">Parking</h3>
-                    </div>
-                    <div class="d-flex justify-content-begin mb-4">
-                        <p class="post-meta">
-                            Parking je moguc bilo koja od dva parkiralista blizu crkve, ili u parking garazi do McDonalds-a. 
-                            Ulaz u crkvu se nalazi iznad McDonalds-a, pa se crkva najlakse pronade dolazeci sa Visoke ulice.
-                            Sa Visoke ulize se samo proseta oko gornji dio zgrade, pa se onda crkva nalazi odmah desno.
-                            Da bi se crkva nasla sa prednje strane zgrade, onda se mora pomocu setalista do mosta koja ide uz desne strane zgrade.
-                        </p>
                     </div>
                 </div>
             </div>
