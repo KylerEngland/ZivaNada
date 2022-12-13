@@ -2,3 +2,5 @@ protected/config.inc.php
 protected/functions.inc.php
 protected/DB.php
 protected/submitPost.inc.php
+protected/UserDB.php
+protected/register.inc.php
