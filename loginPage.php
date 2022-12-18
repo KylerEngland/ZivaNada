@@ -1,5 +1,16 @@
 <?php 
     include_once('navbar.php');
+    if(isset($_GET['result'])){
+        if($_GET['result']==0){
+            echo('	<script type="text/javascript">
+                        window.onload = function () { alert("Pogrešan email ili lozinka."); } 
+                    </script>'); 
+        }else if($_GET['result']==2){
+            echo('	<script type="text/javascript">
+                        window.onload = function () { alert("Ispunite polja za email i za lozinku."); } 
+                    </script>');
+        }
+    }
 ?>
 <!DOCTYPE html>
 <html lang="hr">
@@ -28,7 +39,7 @@
 
 <body>
     <!-- Page Header-->
-    <header class="masthead" style="background-image: url('assets/img/svduje.jpg')">
+    <header class="masthead" style="background-image: url('assets/img/birdseye.jpg')">
         <div class="container position-relative px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-md-10 col-lg-8 col-xl-7">
@@ -59,37 +70,37 @@
             <!-- Pills content -->
             <div class="tab-content">
                 <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
-                    <form>
+                    <form action="protected/authenticate.inc.php" method="post">
                         <p class="text-center">Postojeci profil:</p>
 
                         <!-- Email input -->
                         <div class="form-outline mb-4">
-                            <input type="email" id="loginName" class="form-control" />
+                            <input type="email" id="loginName" class="form-control" name="loginEmail"/>
                             <label class="form-label" for="loginName">Email</label>
                             <!-- ili korisničko ime -->
                         </div>
 
                         <!-- Password input -->
                         <div class="form-outline mb-4">
-                            <input type="password" id="loginPassword" class="form-control" />
+                            <input type="password" id="loginPassword" class="form-control" name="loginPass"/>
                             <label class="form-label" for="loginPassword">Lozinka</label>
                         </div>
 
                         <!-- 2 column grid layout -->
-                        <div class="row mb-4">
+                        <!-- <div class="row mb-4">
                             <div class="col-md-6 d-flex justify-content-center">
-                                <!-- Checkbox -->
+                                
                                 <div class="form-check mb-3 mb-md-0">
-                                    <input class="form-check-input" type="checkbox" value="" id="loginCheck" checked />
+                                    <input class="form-check-input" type="checkbox" value="" id="loginCheck"/>
                                     <label class="form-check-label" for="loginCheck">Automatska prijava</label>
                                 </div>
                             </div>
 
                             <div class="col-md-6 d-flex justify-content-center">
-                                <!-- Simple link -->
+                                
                                 <a href="#!">Zaboravio lozinku?</a>
                             </div>
-                        </div>
+                        </div> -->
 
                         <!-- Submit button -->
                         <button type="submit" class="btn btn-primary btn-block mb-4">Prijavi se</button>
@@ -126,10 +137,10 @@
                         </div>
 
                         <!-- Repeat Password input -->
-                        <div class="form-outline mb-4">
+                        <!-- <div class="form-outline mb-4">
                             <input type="password" id="registerRepeatPassword" class="form-control" name="registerRepeatPassword"/>
                             <label class="form-label" for="registerRepeatPassword">Ponovi lozinku</label>
-                        </div>
+                        </div> -->
 
                         <!-- Checkbox -->
                         <!-- <div class="form-check d-flex justify-content-center mb-4">

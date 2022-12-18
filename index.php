@@ -44,47 +44,51 @@
     <!-- Main Content-->
     <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="d-flex justify-content-begin mb-4">
-                <!-- Button trigger modal for new post -->
-                <button type="button" class="btn btn-primary text-uppercase" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal">
-                    Nova objava
-                </button>
+            <?php
+            if(isset($_SESSION['loggedin']) && $_SESSION['admin']== 1):?>
 
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" class="post-subtitle" id="exampleModalLabel">Nova objava</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
+                <div class="d-flex justify-content-begin mb-4">
+                    <!-- Button trigger modal for new post -->
+                    <button type="button" class="btn btn-primary text-uppercase" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Nova objava
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" class="post-subtitle" id="exampleModalLabel">Nova objava</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+
+                                <form name="newPost" action="protected/submitPost.inc.php" method="post">
+                                    <div class="modal-body">
+                                        <div class="mb-3">
+                                        <label for="title" class="col-form-label">Titula:</label>
+                                        <input type="text" class="form-control" name="title">
+                                        </div>
+                                        <div class="mb-3">
+                                        <label for="description" class="col-form-label">Opis:</label>
+                                        <textarea class="form-control" name="description"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zatvori</button>
+                                        <button type="submit" class="btn btn-primary">Objavi</button>
+                                    </div>
+                                </form>
                             </div>
-
-                            <form name="newPost" action="protected/submitPost.inc.php" method="post">
-                                <div class="modal-body">
-                                    <div class="mb-3">
-                                      <label for="title" class="col-form-label">Titula:</label>
-                                      <input type="text" class="form-control" name="title">
-                                    </div>
-                                    <div class="mb-3">
-                                      <label for="description" class="col-form-label">Opis:</label>
-                                      <textarea class="form-control" name="description"></textarea>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zatvori</button>
-                                    <button type="submit" class="btn btn-primary">Objavi</button>
-                                </div>
-                            </form>
                         </div>
                     </div>
                 </div>
-            </div>
+            <?php endif; ?>
             <div class="col-md-10 col-lg-8 col-xl-7">
                 <?=showPosts();?>
-                <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#!">Starije objave →</a></div>
+                <!-- <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#!">Starije objave →</a></div> -->
             </div>
         </div>
     </div>

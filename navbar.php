@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,8 +41,11 @@
                     <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.php">Objave</a></li>
                     <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="kalendar.php">Kalendar</a></li>
                     <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="lokacija.php">Lokacija</a></li>
-                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="loginPage.php">Prijava i Registracija</a></li>
-                    <!-- <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="">Registracija</a></li> -->
+                    <?php if(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == TRUE):?>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="profile.php">Profil</a></li>
+                    <?php else: ?>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="loginPage.php">Prijava i Registracija</a></li>
+                    <?php endif; ?>
                 </ul>
             </div>
         </div>

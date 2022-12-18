@@ -4,3 +4,4 @@ protected/DB.php
 protected/submitPost.inc.php
 protected/UserDB.php
 protected/register.inc.php
+protected/authenticate.inc.php
