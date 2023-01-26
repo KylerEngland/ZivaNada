@@ -83,16 +83,17 @@
 
                             const firstParking = L.marker([43.511671, 16.482496]);
                             firstParking.addTo(map);
-                            firstParking.bindPopup("<p>Tu je najveci parking, ali najdalje je od crkve. Od tu je najlakse prosetati do McDonalds-a pa od tu doci crkvi.</p>");
+                            firstParking.bindPopup("<p>Tu je najveci parking, ali najdalje je od crkve. Od tu je najlakse prosetati do McDonalds-a pa od tu doci crkvi.</p><br><a href='https://maps.app.goo.gl/snQsGnhTYEZb2tje6'>Google karta</a>");
 
                             const secondParking = L.marker([43.512203, 16.480561]).addTo(map);
-                            secondParking.bindPopup("<p>Crkva najlakse pronade dolazeci sa Visoke ulice. Sa Visoke ulize se samo proseta oko gornji dio zgrade, pa se onda crkva nalazi odmah desno.</p>");
+                            secondParking.bindPopup("<p>Crkva najlakse pronade dolazeci sa Visoke ulice. Sa Visoke ulize se samo proseta oko gornji dio zgrade, pa se onda crkva nalazi odmah desno.</p><br><a href='https://maps.app.goo.gl/AUcGCYMePghfFem46'>Google karta</a>");
 
                             const thirdParking = L.marker([43.511114, 16.480528]).addTo(map);
-                            thirdParking.bindPopup("<p>Ako zelite, mozete parkiratu u parking garazi do McDonalds-a. Od tu je vrlo lako prosetati na lijevoj strani zgrade, pa je crkva onda odmah desno.</p>");
+                            thirdParking.bindPopup("<p>Ako zelite, mozete parkiratu u parking garazi do McDonalds-a. Od tu je vrlo lako prosetati na lijevoj strani zgrade, pa je crkva onda odmah desno.</p><br><a href='https://maps.app.goo.gl/kXJfxFvFa3BSRwcJ8'>Google karta</a>");
 
 
                         </script>
+                        
                     </div>
                 </div>
             </div>

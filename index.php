@@ -68,12 +68,12 @@
                                 <form name="newPost" action="protected/submitPost.inc.php" method="post">
                                     <div class="modal-body">
                                         <div class="mb-3">
-                                        <label for="title" class="col-form-label">Titula:</label>
-                                        <input type="text" class="form-control" name="title">
+                                            <label for="title" class="col-form-label">Titula:</label>
+                                            <input type="text" class="form-control" name="title">
                                         </div>
                                         <div class="mb-3">
-                                        <label for="description" class="col-form-label">Opis:</label>
-                                        <textarea class="form-control" name="description"></textarea>
+                                            <label for="description" class="col-form-label">Opis:</label>
+                                            <textarea class="form-control" name="description"></textarea>
                                         </div>
                                     </div>
                                     <div class="modal-footer">
@@ -88,7 +88,12 @@
             <?php endif; ?>
             <div class="col-md-10 col-lg-8 col-xl-7">
                 <?=showPosts();?>
-                <!-- <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#!">Starije objave →</a></div> -->
+                <div class="d-flex justify-content-center mb-4">
+                    <form method="post">
+                        <input type="hidden" name="postNum" value=" <?= $postNum = isset($_POST['postNum']) ? $_POST['postNum'] : 5;?>"/>
+                        <input name="load" type="submit" class="btn btn-primary text-uppercase" value="Starije objave">
+                    </form>
+                </div>
             </div>
         </div>
     </div>

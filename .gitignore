@@ -1,7 +1,4 @@
-protected/config.inc.php
-protected/functions.inc.php
-protected/DB.php
-protected/submitPost.inc.php
-protected/UserDB.php
-protected/register.inc.php
-protected/authenticate.inc.php
+protected/
+vendor/
+composer.json
+composer.lock

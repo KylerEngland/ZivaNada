@@ -103,9 +103,42 @@
                         </div> -->
 
                         <!-- Submit button -->
-                        <button type="submit" class="btn btn-primary btn-block mb-4">Prijavi se</button>
+                        <div class="d-flex justify-content-between mb-4">
+                            <div class="p-2">
+                                <button type="submit" class="btn btn-primary btn-block mb-4">Prijavi se</button>
+                            </div>
+                            <div class="p-2">
+                                <a data-bs-toggle="modal" data-bs-target="#forgotPassword" href="">Zaboravili lozinku?</a>
+                            </div>
+                        </div>
 
                     </form>
+                    
+                    <div class="modal fade" id="forgotPassword" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" class="post-subtitle" id="exampleModalLabel">Zaboravili lozinku?</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+
+                                <form name="emailReset" action="protected/emailLink.inc.php" method="post">
+                                    <div class="modal-body">
+                                        <div class="mb-3">
+                                            <label for="title" class="col-form-label">Email:</label>
+                                            <input type="text" class="form-control" name="resetEmail">
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zatvori</button>
+                                        <button type="submit" class="btn btn-primary">Posalji email za reset</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="tab-register">
                     <form action="protected/register.inc.php" method="post" autocomplete="off">
