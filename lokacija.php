@@ -83,13 +83,13 @@
 
                             const firstParking = L.marker([43.511671, 16.482496]);
                             firstParking.addTo(map);
-                            firstParking.bindPopup("<p>Tu je najveci parking, ali najdalje je od crkve. Od tu je najlakse prosetati do McDonalds-a pa od tu doci crkvi.</p><br><a href='https://maps.app.goo.gl/snQsGnhTYEZb2tje6'>Google karta</a>");
+                            firstParking.bindPopup("<p>Kada parkirate svoj auto uputite se prema zapadu (McDonaldu). Primijetit čete uzbrdicu iza prostora koji služi za sjedenje na otvorenom. Krenite prema uzbrdici i počnite se uspinjati. S vaše desne strane čete uočit metalne stepenice, koje vas vode do parkinga A. Kada dođete do vrha stepenica nastavite ravno nekoliko metara. Na vašoj lijevoj strani pronaći čete glavni ulaz crkve (jug) koji je označen natpisom Živa Nada.</p><br><a href='https://maps.app.goo.gl/snQsGnhTYEZb2tje6'>Google karta</a>");
 
                             const secondParking = L.marker([43.512203, 16.480561]).addTo(map);
-                            secondParking.bindPopup("<p>Crkva najlakse pronade dolazeci sa Visoke ulice. Sa Visoke ulize se samo proseta oko gornji dio zgrade, pa se onda crkva nalazi odmah desno.</p><br><a href='https://maps.app.goo.gl/AUcGCYMePghfFem46'>Google karta</a>");
+                            secondParking.bindPopup("<p>Kada parkirate svoj auto, uputite se prema zapadu (skrenite lijevo s parkinga). Zatim hodajte ravno do prvog skretanja u lijevo koje vas vodi na T raskrižje. Sa ovog raskrižja hodajte ravno cca 80 m prema jugu (plavo – bijeloj zgradi). Potom skrenite u lijevo i nastavite ravno kroz prolaz. Kada prođete prolaz ponovo skrenite u lijevo, hodajte nekoliko metara ravno. Na vašoj lijevoj strani pronaći čete glavni ulaz crkve (jug) koji je označen natpisom Živa Nada.</p><br><a href='https://maps.app.goo.gl/AUcGCYMePghfFem46'>Google karta</a>");
 
                             const thirdParking = L.marker([43.511114, 16.480528]).addTo(map);
-                            thirdParking.bindPopup("<p>Ako zelite, mozete parkiratu u parking garazi do McDonalds-a. Od tu je vrlo lako prosetati na lijevoj strani zgrade, pa je crkva onda odmah desno.</p><br><a href='https://maps.app.goo.gl/kXJfxFvFa3BSRwcJ8'>Google karta</a>");
+                            thirdParking.bindPopup("<p>Ako želite, mozete parkiratu u parking garaži do McDonalds-a. Od tu je vrlo lako prošetati na lijevoj strani zgrade, pa je crkva onda odmah desno.</p><br><a href='https://maps.app.goo.gl/kXJfxFvFa3BSRwcJ8'>Google karta</a>");
 
 
                         </script>
