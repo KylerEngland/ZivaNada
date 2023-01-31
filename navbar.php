@@ -39,7 +39,6 @@ session_start();
                 <ul class="navbar-nav ms-auto py-4 py-lg-0">
                     <!-- <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="">O Nama</a></li> -->
                     <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.php">Objave</a></li>
-                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="kalendar.php">Kalendar</a></li>
                     <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="lokacija.php">Lokacija</a></li>
                     <?php if(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == TRUE):?>
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="profile.php">Profil</a></li>
