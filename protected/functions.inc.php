@@ -3,12 +3,17 @@ require_once('protected/DB.php');
 require_once('protected/UserDB.php');
 
 function showPosts(){
-    $postNum = isset($_POST['postNum']) ? $_POST['postNum'] : 5;
+    if(isset($_POST['postNum'])){
+        $postNum = $_POST['postNum'];
+    }else{
+        $postNum = 5;
+    }
+    // $postNum = isset($_POST['postNum']) ? $_POST['postNum'] : 5;
     if(isset($_POST['load'])){
         $postNum = $postNum + 5;
         $_POST['postNum'] = $postNum;
     }
-
+    
     $database = new DB;
     $posts = $database->showPosts($postNum);
     echo outputPost($posts);
@@ -32,6 +37,8 @@ function outputPost($posts){
                     </div>
                     <hr class="my-4" />';
     }
+
+    $post .= '<div id="openHere"></div>';
     if($foundOne){
         return $post;
     }
