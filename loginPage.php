@@ -86,22 +86,6 @@
                             <label class="form-label" for="loginPassword">Lozinka</label>
                         </div>
 
-                        <!-- 2 column grid layout -->
-                        <!-- <div class="row mb-4">
-                            <div class="col-md-6 d-flex justify-content-center">
-                                
-                                <div class="form-check mb-3 mb-md-0">
-                                    <input class="form-check-input" type="checkbox" value="" id="loginCheck"/>
-                                    <label class="form-check-label" for="loginCheck">Automatska prijava</label>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 d-flex justify-content-center">
-                                
-                                <a href="#!">Zaboravio lozinku?</a>
-                            </div>
-                        </div> -->
-
                         <!-- Submit button -->
                         <div class="d-flex justify-content-between mb-4">
                             <div class="p-2">
@@ -168,21 +152,6 @@
                             <input type="password" id="registerPassword" class="form-control" name="registerPassword"/>
                             <label class="form-label" for="registerPassword">Nova lozinka</label>
                         </div>
-
-                        <!-- Repeat Password input -->
-                        <!-- <div class="form-outline mb-4">
-                            <input type="password" id="registerRepeatPassword" class="form-control" name="registerRepeatPassword"/>
-                            <label class="form-label" for="registerRepeatPassword">Ponovi lozinku</label>
-                        </div> -->
-
-                        <!-- Checkbox -->
-                        <!-- <div class="form-check d-flex justify-content-center mb-4">
-                            <input class="form-check-input me-2" type="checkbox" value="" id="registerCheck" checked
-                            aria-describedby="registerCheckHelpText" />
-                            <label class="form-check-label" for="registerCheck">
-                            I have read and agree to the terms
-                            </label>
-                        </div> -->
 
                         <!-- Submit button -->
                         <button type="submit" class="btn btn-primary btn-block mb-3">Registriraj se</button>

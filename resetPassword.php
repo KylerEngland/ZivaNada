@@ -61,14 +61,19 @@
                                 <p class="card-text"><?=$_GET['email']?></p>
     
                                 <h5 class="card-title">Nova Lozinka:</h5>
-                                <input type="password" class="form-control mb-3" name="newPassword" id="newPassword">
+                                <div class="field">
+                                    <input name="newPassword" id="newPassword" type="password" class="form-control mb-3" onkeyup="validateLength()">
+                                </div>
 
                                 <h5 class="card-title">Ponovi Lozinku:</h5>
-                                <input type="password" class="form-control mb-3" name="newPassword2" id="newPassword2">
+                                <div id="error-text" class="text-danger"></div>
+                                <div class="field">
+                                    <input name="newPassword2" id="newPassword2" type="password" class="form-control mb-3">
+                                </div>
 
                                 <input type="hidden" name="email" value=<?=$_GET['email']?>>
 
-                                <button type="submit" class="btn btn-primary">Potvrdi</button>
+                                <button id="button" disabled type="submit" class="btn btn-primary">Potvrdi</button>
                             </div>
                         </form>
                     </div>                    
