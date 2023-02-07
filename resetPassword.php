@@ -55,13 +55,17 @@
                         <div class="card-header">
                             Detalji profila
                         </div>
-                        <form action="protected/reset.inc.php" method="post">
+                        <form id="resetForm" action="protected/reset.inc.php" method="post">
                             <div class="card-body">
                                 <h5 class="card-title">Email:</h5>
                                 <p class="card-text"><?=$_GET['email']?></p>
     
                                 <h5 class="card-title">Nova Lozinka:</h5>
-                                <input type="password" class="form-control mb-3" name="newPassword">
+                                <input type="password" class="form-control mb-3" name="newPassword" id="newPassword">
+
+                                <h5 class="card-title">Ponovi Lozinku:</h5>
+                                <input type="password" class="form-control mb-3" name="newPassword2" id="newPassword2">
+
                                 <input type="hidden" name="email" value=<?=$_GET['email']?>>
 
                                 <button type="submit" class="btn btn-primary">Potvrdi</button>
@@ -81,6 +85,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+    <script src="js/validate.js"></script>
 </body>
 
 </html>
