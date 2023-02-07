@@ -48,6 +48,13 @@
                     <div class="small text-center text-muted fst-italic">Telefon: +385 95 350 0504</div>
                     <div class="small text-center text-muted fst-italic">Mail: zivanada@gmail.com</div>
                     <div class="small text-center text-muted fst-italic">Adresa: Tavelićeva 46, Split, Croatia</div>
+                    <?php if(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == TRUE):?>
+                        <div class="small text-center text-muted fst-italic"><a href="profile.php">Profil</a></div>
+                        <!-- <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="profile.php">Profil</a></li> -->
+                    <?php else: ?>
+                        <div class="small text-center text-muted fst-italic"><a href="loginPage.php">Admin prijava</a></div>
+                        <!-- <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="loginPage.php">Prijava i Registracija</a></li> -->
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
