@@ -9,7 +9,7 @@ function showPosts(){
         $postNum = 5;
     }
     $anchorLocation = $postNum;
-    // $postNum = isset($_POST['postNum']) ? $_POST['postNum'] : 5;
+    
     if(isset($_POST['load'])){
         $postNum = $postNum + 5;
         $_POST['postNum'] = $postNum;
