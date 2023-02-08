@@ -100,7 +100,7 @@
                     <!-- If it has, then we check if the amount of posts that exist is greater than the amount of posts being shown. -->
                     <?php if ($existingPosts > $_POST['postNum']): ?>
                         <div class="d-flex justify-content-center mb-4">
-                            <form method="post">
+                            <form method="post" action="index.php#open-here">
                                 <input type="hidden" name="postNum" value=" <?= $postNum = isset($_POST['postNum']) ? $_POST['postNum'] : 5;?>"/>
                                 <input name="load" type="submit" class="btn btn-primary text-uppercase" value="Starije objave">
                             </form>
@@ -110,7 +110,7 @@
                 <!-- If the postNum variable has not been set, then we need to be able to push the button anyways -->
                 <?php else:?>
                     <div class="d-flex justify-content-center mb-4">
-                        <form method="post">
+                        <form method="post" action="index.php#open-here">
                             <input type="hidden" name="postNum" value=" <?= $postNum = isset($_POST['postNum']) ? $_POST['postNum'] : 5;?>"/>
                             <input name="load" type="submit" class="btn btn-primary text-uppercase" value="Starije objave">
                         </form>

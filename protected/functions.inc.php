@@ -38,7 +38,7 @@ function outputPost($posts){
                     <hr class="my-4" />';
     }
 
-    $post .= '<div id="openHere"></div>';
+    $post .= '<div id="open-here"></div>';
     if($foundOne){
         return $post;
     }
