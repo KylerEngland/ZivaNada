@@ -1,4 +1,4 @@
-###Ziva Nada Church Website
+# Ziva Nada Church Website
 
-##Usage
+## Usage
 ----
