@@ -62,7 +62,7 @@
     
                                 <h5 class="card-title">Nova Lozinka:</h5>
                                 <div class="field">
-                                    <input name="newPassword" id="newPassword" type="password" class="form-control mb-3" onkeyup="validateLength()">
+                                    <input name="newPassword" id="newPassword" type="password" class="form-control mb-3" >
                                 </div>
 
                                 <h5 class="card-title">Ponovi Lozinku:</h5>
@@ -73,7 +73,7 @@
 
                                 <input type="hidden" name="email" value=<?=$_GET['email']?>>
 
-                                <button id="button" disabled type="submit" class="btn btn-primary">Potvrdi</button>
+                                <button id="button" type="submit" class="btn btn-primary">Potvrdi</button>
                             </div>
                         </form>
                     </div>                    
