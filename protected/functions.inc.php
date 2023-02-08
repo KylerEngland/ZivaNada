@@ -8,21 +8,27 @@ function showPosts(){
     }else{
         $postNum = 5;
     }
+    $anchorLocation = $postNum;
     // $postNum = isset($_POST['postNum']) ? $_POST['postNum'] : 5;
     if(isset($_POST['load'])){
         $postNum = $postNum + 5;
         $_POST['postNum'] = $postNum;
     }
-    
+
     $database = new DB;
     $posts = $database->showPosts($postNum);
-    echo outputPost($posts);
+    echo outputPost($posts, $anchorLocation);
 }
 
-function outputPost($posts){
+function outputPost($posts, $anchorLocation){
     $foundOne = true;
     $post = '';
+    $counter = 0;
     while($row = $posts->fetch()){
+        $counter = $counter + 1;
+        if($counter == ($anchorLocation-1)){
+            $post .= '<a id="open-here"></a>';
+        }
         $foundOne = true;
         $post .=    '<div class="announcement-preview">
                         <a href="announcement.php">
@@ -38,7 +44,6 @@ function outputPost($posts){
                     <hr class="my-4" />';
     }
 
-    $post .= '<div id="open-here"></div>';
     if($foundOne){
         return $post;
     }
