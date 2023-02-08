@@ -1,2 +1,4 @@
-# ZivaNada
-Website for Ziva Nada church
+###Ziva Nada Church Website
+
+##Usage
+----
