@@ -1,3 +1,11 @@
+// window.addEventListener('DOMContentLoaded', () => {
+//   validate();
+// })
+
+// export default function validate(){
+
+// };
+
 const newPassword = document.querySelector("#newPassword");
 const newPassword2 = document.querySelector("#newPassword2");
 const errorText = document.querySelector("#error-text");
