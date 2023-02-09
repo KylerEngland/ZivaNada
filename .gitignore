@@ -1,7 +1,4 @@
 protected/config.inc.php
-protected/DB.php
-protected/emailLink.inc.php
-protected/UserDB.php
 vendor/
 composer.json
 composer.lock
