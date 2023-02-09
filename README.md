@@ -17,21 +17,27 @@ define('DBPASS', 'your password here');
 define('DBCONNSTRING', "mysql:host=". DBHOST. ";dbname=". DBNAME);
 define('SITE_ROOT', "your site root here");
 define('APP_PASS', 'your app pass from Gmail here');
+define('MY_EMAIL', 'senders (most likely your) email here');
 ?>
 
 ```
-* The app pass for Gmail is used to send the email when someone forgets their password. To create it:
-    * Do this
-    * Then this
-* The final step will be to download the dependencies by running these two commands:
+* The "APP_PASS" from the step above is used by Gmail to send the email when someone forgets their password. To create it:
+    * Go to your Google Account settings.
+    * From there choose Security, and then set up two-step verification.
+    * Then under the section titled "Signing into Google", choose "App passwords."
+    * It will then direct you on how to set up an app password, which you will then paste in the **config.inc.php** file you created in the step above.
+
+## Installing Dependencies
+----
+* The final step will be to download the dependencies
+* First off, to be able to add dependencies to your php, download composer [here](https://getcomposer.org/download/).
+* Then, at the top level of your folder, create a valid json called composer.json.
+* To be able to install Jest for javascript testing, download npm from [here](https://github.com/coreybutler/nvm-windows).
+* Finally, run these commands:
 ```powershell
-npm -i --save composer
 composer config
-php composer.phar update
 composer require phpmailer/phpmailer
-
 npm -i jest --save-dev
-
 ```
 
 
