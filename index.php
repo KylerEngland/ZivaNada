@@ -93,12 +93,23 @@
             <?php endif; ?>
             <div class="col-md-10 col-lg-8 col-xl-7">
                 <?=showPosts();?>
-
-                <!-- First we check to see if the postNum variable has been set. -->
-                <?php if (isset($_POST['postNum'])): ?>
-
-                    <!-- If it has, then we check if the amount of posts that exist is greater than the amount of posts being shown. -->
-                    <?php if ($existingPosts > $_POST['postNum']): ?>
+                <!-- First we make sure that there are more than 5 existing posts as that is the default shown when you load the page. -->
+                <?php if($existingPosts > 5): ?>
+                    <!-- Then we check to see if the postNum variable has been set. -->
+                    <?php if (isset($_POST['postNum'])): ?>
+    
+                        <!-- If it has, then we check if the amount of posts that exist is greater than the amount of posts being shown. -->
+                        <?php if ($existingPosts > $_POST['postNum']): ?>
+                            <div class="d-flex justify-content-center mb-4">
+                                <form method="post" action="index.php#open-here">
+                                    <input type="hidden" name="postNum" value=" <?= $postNum = isset($_POST['postNum']) ? $_POST['postNum'] : 5;?>"/>
+                                    <input name="load" type="submit" class="btn btn-primary text-uppercase" value="Starije objave">
+                                </form>
+                            </div>
+                        <?php endif; ?>
+                    
+                    <!-- If the postNum variable has not been set, then we need to be able to push the button anyways -->
+                    <?php else:?>
                         <div class="d-flex justify-content-center mb-4">
                             <form method="post" action="index.php#open-here">
                                 <input type="hidden" name="postNum" value=" <?= $postNum = isset($_POST['postNum']) ? $_POST['postNum'] : 5;?>"/>
@@ -106,15 +117,6 @@
                             </form>
                         </div>
                     <?php endif; ?>
-                
-                <!-- If the postNum variable has not been set, then we need to be able to push the button anyways -->
-                <?php else:?>
-                    <div class="d-flex justify-content-center mb-4">
-                        <form method="post" action="index.php#open-here">
-                            <input type="hidden" name="postNum" value=" <?= $postNum = isset($_POST['postNum']) ? $_POST['postNum'] : 5;?>"/>
-                            <input name="load" type="submit" class="btn btn-primary text-uppercase" value="Starije objave">
-                        </form>
-                    </div>
                 <?php endif; ?>
             </div>
         </div>
