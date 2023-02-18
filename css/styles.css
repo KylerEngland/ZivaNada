@@ -11223,12 +11223,12 @@ header.masthead .site-heading .h1 {
   text-decoration: none;
   color: #0085A1;
 }
-.announcement-preview > a > .post-title {
+.announcement-preview > .post-title {
   font-size: 1.875rem;
   margin-top: 1.875rem;
   margin-bottom: 0.625rem;
 }
-.announcement-preview > a > .post-subtitle {
+.announcement-preview > .post-subtitle {
   font-weight: 300;
   margin-bottom: 0.625rem;
 }
@@ -11242,7 +11242,7 @@ header.masthead .site-heading .h1 {
   text-decoration: none;
 }
 @media (min-width: 992px) {
-  .announcement-preview > a > .post-title {
+  .announcement-preview > .post-title {
     font-size: 2.25rem;
   }
 }

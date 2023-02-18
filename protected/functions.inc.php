@@ -36,9 +36,7 @@ function outputPost($posts, $anchorLocation){
                             <h3 class="post-subtitle">' . $row['description'] . '</h3>
                         </a>
                         <p class="post-meta">
-                            Objavio
-                            <a href="#!">' . $row['ime'] . " " . $row['prezime'] .'</a>
-                            na ' . $row['createdDate'] . '
+                            ' . $row['eventDate'] . ', ' . $row['eventTime'] . '
                         </p>
                     </div>
                     <hr class="my-4" />';

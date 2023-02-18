@@ -34,12 +34,12 @@
         href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
         rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="../css/styles.css" rel="stylesheet" />
 </head>
 
 <body>
     <!-- Page Header-->
-    <header class="masthead" style="background-image: url('assets/img/birdseye.jpg')">
+    <header class="masthead" style="background-image: url('../assets/img/birdseye.jpg')">
         <div class="container position-relative px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-md-10 col-lg-8 col-xl-7">
@@ -70,7 +70,7 @@
             <!-- Pills content -->
             <div class="tab-content">
                 <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
-                    <form action="protected/authenticate.inc.php" method="post">
+                    <form action="../protected/authenticate.inc.php" method="post">
                         <p class="text-center">Postojeci profil:</p>
 
                         <!-- Email input -->
@@ -108,7 +108,7 @@
                                         aria-label="Close"></button>
                                 </div>
 
-                                <form name="emailReset" action="protected/emailLink.inc.php" method="post">
+                                <form name="emailReset" action="../protected/emailLink.inc.php" method="post">
                                     <div class="modal-body">
                                         <div class="mb-3">
                                             <label for="title" class="col-form-label">Email:</label>
@@ -125,7 +125,7 @@
                     </div>
                 </div>
                 <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="tab-register">
-                    <form action="protected/register.inc.php" method="post" autocomplete="off">
+                    <form action="../protected/register.inc.php" method="post" autocomplete="off">
 
                         <p class="text-center">Novi profil:</p>
 

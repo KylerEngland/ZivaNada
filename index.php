@@ -1,11 +1,9 @@
-<?php 
-    require_once('protected/functions.inc.php');
-    include_once('navbar.php');
-
-    // Here I am instantiating a new DB so that I can get the total number of posts in the database.
-    $database = new DB;
-    $existingPosts = $database->getPostsNumber();
-
+<?php
+session_start();
+require_once('protected/functions.inc.php');
+// Here I am instantiating a new DB so that I can get the total number of posts in the database.
+$database = new DB;
+$existingPosts = $database->getPostsNumber();
 ?>
 <!DOCTYPE html>
 <html lang="hr">
@@ -33,6 +31,7 @@
 </head>
 
 <body>
+    <?php include_once('pages/navbar.php'); ?>
     <!-- Page Header-->
     <header class="masthead" style="background-image: url('assets/img/vidilica2.jpg')">
         <div class="container position-relative px-4 px-lg-5">
@@ -50,7 +49,7 @@
     <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <?php
-            if(isset($_SESSION['loggedin']) && $_SESSION['admin']== 1):?>
+            if (isset($_SESSION['loggedin']) && $_SESSION['admin'] == 1): ?>
 
                 <div class="d-flex justify-content-begin mb-4">
                     <!-- Button trigger modal for new post -->
@@ -77,12 +76,21 @@
                                             <input type="text" class="form-control" name="title">
                                         </div>
                                         <div class="mb-3">
+                                            <label for="date" class="col-form-label">Datum:</label>
+                                            <input type="date" class="form-control" name="date">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="time" class="col-form-label">Vrijeme:</label>
+                                            <input type="time" class="form-control" name="time">
+                                        </div>
+                                        <div class="mb-3">
                                             <label for="description" class="col-form-label">Opis:</label>
                                             <textarea class="form-control" name="description"></textarea>
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zatvori</button>
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Zatvori</button>
                                         <button type="submit" class="btn btn-primary">Objavi</button>
                                     </div>
                                 </form>
@@ -92,27 +100,29 @@
                 </div>
             <?php endif; ?>
             <div class="col-md-10 col-lg-8 col-xl-7">
-                <?=showPosts();?>
+                <?= showPosts(); ?>
                 <!-- First we make sure that there are more than 5 existing posts as that is the default shown when you load the page. -->
-                <?php if($existingPosts > 5): ?>
+                <?php if ($existingPosts > 5): ?>
                     <!-- Then we check to see if the postNum variable has been set. -->
                     <?php if (isset($_POST['postNum'])): ?>
-    
+
                         <!-- If it has, then we check if the amount of posts that exist is greater than the amount of posts being shown. -->
                         <?php if ($existingPosts > $_POST['postNum']): ?>
                             <div class="d-flex justify-content-center mb-4">
                                 <form method="post" action="index.php#open-here">
-                                    <input type="hidden" name="postNum" value=" <?= $postNum = isset($_POST['postNum']) ? $_POST['postNum'] : 5;?>"/>
+                                    <input type="hidden" name="postNum"
+                                        value=" <?= $postNum = isset($_POST['postNum']) ? $_POST['postNum'] : 5; ?>" />
                                     <input name="load" type="submit" class="btn btn-primary text-uppercase" value="Starije objave">
                                 </form>
                             </div>
                         <?php endif; ?>
-                    
-                    <!-- If the postNum variable has not been set, then we need to be able to push the button anyways -->
-                    <?php else:?>
+
+                        <!-- If the postNum variable has not been set, then we need to be able to push the button anyways -->
+                    <?php else: ?>
                         <div class="d-flex justify-content-center mb-4">
                             <form method="post" action="index.php#open-here">
-                                <input type="hidden" name="postNum" value=" <?= $postNum = isset($_POST['postNum']) ? $_POST['postNum'] : 5;?>"/>
+                                <input type="hidden" name="postNum"
+                                    value=" <?= $postNum = isset($_POST['postNum']) ? $_POST['postNum'] : 5; ?>" />
                                 <input name="load" type="submit" class="btn btn-primary text-uppercase" value="Starije objave">
                             </form>
                         </div>
@@ -122,7 +132,7 @@
         </div>
     </div>
     <!-- Footer file -->
-    <?php include_once('footer.php')?>
+    <?php include_once('pages/footer.php') ?>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->

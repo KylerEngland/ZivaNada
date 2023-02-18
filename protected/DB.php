@@ -25,17 +25,17 @@ class DB{
     }
 
   
-    public static function insertPost($userID, $title, $description){
+    public static function insertPost($userID, $title, $description, $date, $time){
         try{
             $postID ="";
     
             $sql = "INSERT INTO `posts`(
-                `id`, `userID`, `title`, `description`) 
+                `id`, `userID`, `title`, `description`, `eventDate`, `eventTime`) 
                 VALUES (
-                :postID, :userID, :title, :description )";
+                :postID, :userID, :title, :description, :eventDate, :eventTime)";
     
             $query = self::$connection->prepare($sql);
-            $query->execute( array( 'postID' => $title, 'userID' => $userID, 'title' => $title, 'description' => $description ) );
+            $query->execute( array( 'postID' => $title, 'userID' => $userID, 'title' => $title, 'description' => $description, 'eventDate' => $date, 'eventTime' => $time ) );
         }
         catch(PDOException $e){
             die( $e->getMessage() );
@@ -47,7 +47,7 @@ class DB{
 
     public static function showPosts($postNum){
         try{
-            $sql = "SELECT p.id, p.userID, p.title, p.description, p.createdDate, pr.ime, pr.prezime 
+            $sql = "SELECT p.id, p.userID, p.title, p.description, p.eventDate, pr.ime, pr.prezime, p.eventTime 
                     FROM posts AS p 
                     INNER JOIN profiles AS pr 
                     ON p.userID = pr.id 
