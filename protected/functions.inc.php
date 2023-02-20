@@ -26,17 +26,23 @@ function outputPost($posts, $anchorLocation){
     $counter = 0;
     while($row = $posts->fetch()){
         $counter = $counter + 1;
+        $foundOne = true;
         if($counter == ($anchorLocation-1)){
             $post .= '<a id="open-here"></a>';
         }
-        $foundOne = true;
+        if($row['eventTime'] == "00:00:00"){
+            $row['eventTime'] = "Ubrzo više informacija";
+        }
+        if($row['eventDate'] == "0000-00-00"){
+            $row['eventDate'] = "Ubrzo više informacija";
+        }
         $post .=    '<div class="announcement-preview">
                         <a href="announcement.php">
                             <h2 class="post-title">' . $row['title'] . '</h2>
                             <h3 class="post-subtitle">' . $row['description'] . '</h3>
                         </a>
                         <p class="post-meta">
-                            ' . $row['eventDate'] . ', ' . $row['eventTime'] . '
+                            Datum: ' . $row['eventDate'] . ', Vrijeme: ' . $row['eventTime'] . '
                         </p>
                     </div>
                     <hr class="my-4" />';

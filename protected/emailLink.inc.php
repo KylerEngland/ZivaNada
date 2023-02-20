@@ -45,7 +45,7 @@ try {
     $mail->Subject = 'Zaboravili lozinku?';
     $mail->isHTML(true);                                  //Set email format to HTML
     // $mail->Body    = 'To reset your password, go to <b> ZivaNada/resetPassword.php?token=' . $token . '&email=' . $_POST['resetEmail'] . '</b>, or go to <a href="localhost/ZivaNada/resetPassword.php?token=' . $token . '&email=' . $_POST['resetEmail'] . '">Here</a>';
-    $mail->Body    = 'Da bi promijenili lozinku, kliknite <a href="localhost/ZivaNada/resetPassword.php?token=' . $token . '&email=' . $_POST['resetEmail'] . '">Ovje</a>';
+    $mail->Body    = 'Da bi promijenili lozinku, kliknite <a href="localhost/ZivaNada/resetPassword.php?token=' . $token . '&email=' . $_POST['resetEmail'] . '">ovdje</a>';
 
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 

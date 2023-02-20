@@ -31,7 +31,7 @@ $existingPosts = $database->getPostsNumber();
 </head>
 
 <body>
-    <?php include_once('pages/navbar.php'); ?>
+    <?php include_once('includes/navbar.php'); ?>
     <!-- Page Header-->
     <header class="masthead" style="background-image: url('assets/img/vidilica2.jpg')">
         <div class="container position-relative px-4 px-lg-5">
@@ -132,7 +132,7 @@ $existingPosts = $database->getPostsNumber();
         </div>
     </div>
     <!-- Footer file -->
-    <?php include_once('pages/footer.php') ?>
+    <?php include_once('includes/footer.php') ?>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
