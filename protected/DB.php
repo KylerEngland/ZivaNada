@@ -27,8 +27,6 @@ class DB{
   
     public static function insertPost($userID, $title, $description, $date, $time){
         try{
-            $postID ="";
-    
             $sql = "INSERT INTO `posts`(
                 `id`, `userID`, `title`, `description`, `eventDate`, `eventTime`) 
                 VALUES (
@@ -71,6 +69,22 @@ class DB{
             $statement->execute();
             $result = $statement->fetch();
             return $result['COUNT(*)'];
+        }
+        catch(PDOException $e){
+            die( $e->getMessage() );
+        }
+        finally {
+            $pdo = null;
+        }
+    }
+
+    public static function deletePost($id){
+        try{
+            $sql = "DELETE FROM posts WHERE id = $id";
+
+            $statement = self::$connection->prepare($sql);
+            $statement->execute();
+            return $statement;
         }
         catch(PDOException $e){
             die( $e->getMessage() );
