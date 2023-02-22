@@ -10,3 +10,4 @@ package.json
 composer.phar
 
 Selenium/
+.phpunit.result.cache
