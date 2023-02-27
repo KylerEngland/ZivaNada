@@ -37,10 +37,11 @@ function outputPost($posts, $anchorLocation){
             $row['eventDate'] = "Ubrzo više informacija";
         }
         $post .=    '<div class="announcement-preview">
-                        <a href="announcement.php">
-                            <h2 class="post-title">' . $row['title'] . '</h2>
-                            <h3 class="post-subtitle">' . $row['description'] . '</h3>
-                        </a>
+                        <h2 class="post-title">' . $row['title'] . '</h2>
+                        <h3 class="post-subtitle">' . $row['description'] . '</h3>
+
+                        <button type="button" class="btn btn-primary btn-sm"><i class="fa-solid fa-pen-to-square"></i></button>
+                        <button type="button" class="btn btn-primary btn-sm"><i class="fa-solid fa-trash"></i></button>
                         <p class="post-meta">
                             Datum: ' . $row['eventDate'] . ', Vrijeme: ' . $row['eventTime'] . '
                         </p>
