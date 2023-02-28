@@ -1,5 +1,6 @@
 <?php 
 require_once('config.inc.php');
+require_once('Event.php');
 class DB{
 
 
@@ -53,7 +54,13 @@ class DB{
 
             $statement = self::$connection->prepare($sql);
             $statement->execute();
-            return $statement;
+            $events = array();
+            while($row = $statement->fetch()){
+                $newEvent = new Event($row['userID'], $row['title'], $row['description'], $row['eventDate'], $row['eventTime']);
+                array_push($events, $newEvent);
+            }
+
+            return $events;
         }
         catch(PDOException $e){
             die( $e->getMessage() );
