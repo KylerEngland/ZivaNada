@@ -78,10 +78,10 @@ class DB{
                     ON
                         p.userID = pr.id
                     ORDER BY
-                        p.id DESC LIMIT : postNum";
+                        p.id DESC LIMIT :postNum";
 
             $statement = self::$connection->prepare($sql);
-            $statement->bindParam(':postNum', $postNum);
+            $statement->bindParam(':postNum', $postNum, PDO::PARAM_INT);
             $statement->execute();
 
             $events = array();
@@ -158,7 +158,7 @@ class DB{
             $statement = self::$connection->prepare($sql);
             $statement->bindParam(':id', $id);
             $statement->execute();
-            
+
             return $statement;
         }
         catch(PDOException $e){
