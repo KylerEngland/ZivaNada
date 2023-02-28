@@ -1,13 +1,14 @@
 <?php
 
 class Event{
-
+    protected $id;
     protected $userID;
     protected $title;
     protected $description;
     protected $eventDate;
     protected $eventTime;
-    function __construct($userID, $title, $description, $eventDate, $eventTime){
+    function __construct($id, $userID, $title, $description, $eventDate, $eventTime){
+        $this->id = $id;
         $this->userID = $userID;
         $this->title = $title;
         $this->description = $description;
@@ -28,17 +29,17 @@ class Event{
                         <h2 class="post-title">' . $this->title . '</h2>
                         <h3 class="post-subtitle">' . $this->description . '</h3>
 
-                        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#editModal">
+                        <p class="post-meta">
+                            Datum: ' . $this->eventDate . ', Vrijeme: ' . $this->eventTime. '
+                        </p>
+                        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#editModal' . $this->id . '">
                             <i class="fa-solid fa-pen-to-square"></i>
                         </button>
                         <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#deleteModal">
                             <i class="fa-solid fa-trash"></i>
                         </button>
-                        <p class="post-meta">
-                            Datum: ' . $this->eventDate . ', Vrijeme: ' . $this->eventTime. '
-                        </p>
                     </div>
-                    <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="editModal' . $this->id . '" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -85,15 +86,15 @@ class Event{
                         <h2 class="post-title">' . $this->title . '</h2>
                         <h3 class="post-subtitle">' . $this->description . '</h3>
 
+                        <p class="post-meta">
+                            Datum: ' . $this->eventDate . ', Vrijeme: ' . $this->eventTime. '
+                        </p>
                         <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#editModal">
                             <i class="fa-solid fa-pen-to-square"></i>
                         </button>
                         <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#deleteModal">
                             <i class="fa-solid fa-trash"></i>
                         </button>
-                        <p class="post-meta">
-                            Datum: ' . $this->eventDate . ', Vrijeme: ' . $this->eventTime. '
-                        </p>
                     </div>
                     <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">

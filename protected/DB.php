@@ -29,12 +29,29 @@ class DB{
     public static function insertPost($userID, $title, $description, $date, $time){
         try{
             $sql = "INSERT INTO `posts`(
-                `id`, `userID`, `title`, `description`, `eventDate`, `eventTime`) 
-                VALUES (
-                :postID, :userID, :title, :description, :eventDate, :eventTime)";
+                        `userID`,
+                        `title`,
+                        `description`,
+                        `eventDate`,
+                        `eventTime`
+                    )
+                    VALUES(
+                        :userID,
+                        :title,
+                        :description,
+                        :eventDate,
+                        :eventTime
+                    )";
     
             $query = self::$connection->prepare($sql);
-            $query->execute( array( 'postID' => $title, 'userID' => $userID, 'title' => $title, 'description' => $description, 'eventDate' => $date, 'eventTime' => $time ) );
+
+            $query->bindParam(':userID', $userID);
+            $query->bindParam(':title', $title);
+            $query->bindParam(':description', $description);
+            $query->bindParam(':eventDate', $eventDate);
+            $query->bindParam(':eventTime', $eventTime);
+            
+            $query->execute();
         }
         catch(PDOException $e){
             die( $e->getMessage() );
@@ -46,17 +63,31 @@ class DB{
 
     public static function showPosts($postNum){
         try{
-            $sql = "SELECT p.id, p.userID, p.title, p.description, p.eventDate, pr.ime, pr.prezime, p.eventTime 
-                    FROM posts AS p 
-                    INNER JOIN profiles AS pr 
-                    ON p.userID = pr.id 
-                    ORDER BY p.id DESC LIMIT $postNum";
+            $sql = "SELECT
+                        p.id,
+                        p.userID,
+                        p.title,
+                        p.description,
+                        p.eventDate,
+                        pr.ime,
+                        pr.prezime,
+                        p.eventTime
+                    FROM
+                        posts AS p
+                    INNER JOIN PROFILES AS pr
+                    ON
+                        p.userID = pr.id
+                    ORDER BY
+                        p.id DESC LIMIT : postNum";
 
             $statement = self::$connection->prepare($sql);
+            $statement->bindParam(':postNum', $postNum);
             $statement->execute();
+
             $events = array();
+
             while($row = $statement->fetch()){
-                $newEvent = new Event($row['userID'], $row['title'], $row['description'], $row['eventDate'], $row['eventTime']);
+                $newEvent = new Event($row['id'], $row['userID'], $row['title'], $row['description'], $row['eventDate'], $row['eventTime']);
                 array_push($events, $newEvent);
             }
 
@@ -74,6 +105,7 @@ class DB{
             $sql = "SELECT COUNT(*) FROM posts";
             $statement = self::$connection->prepare($sql);
             $statement->execute();
+
             $result = $statement->fetch();
             return $result['COUNT(*)'];
         }
@@ -85,12 +117,48 @@ class DB{
         }
     }
 
-    public static function deletePost($id){
+    public static function editPost($id, $userID, $title, $description, $eventDate, $eventTime){
+
         try{
-            $sql = "DELETE FROM posts WHERE id = $id";
+            $sql = "UPDATE
+                        `posts`
+                    SET
+                        `userID` = :userID,
+                        `title` = :title,
+                        `description` = :description,
+                        `eventDate` = :eventDate,
+                        `eventTime` = :eventTime
+                    WHERE
+                        `id` = ?";
 
             $statement = self::$connection->prepare($sql);
+
+            $statement->bindParam(':userID', $userID);
+            $statement->bindParam(':title', $title);
+            $statement->bindParam(':description', $description);
+            $statement->bindParam(':eventDate', $eventDate);
+            $statement->bindParam(':eventTime', $eventTime);
+            $statement->bindParam(':id', $id);
+          
             $statement->execute();
+            return $statement;
+        }
+        catch(PDOException $e){
+            die( $e->getMessage() );
+        }
+        finally {
+            $pdo = null;
+        }        
+    }
+
+    public static function deletePost($id){
+        try{
+            $sql = "DELETE FROM posts WHERE id = :id";
+
+            $statement = self::$connection->prepare($sql);
+            $statement->bindParam(':id', $id);
+            $statement->execute();
+            
             return $statement;
         }
         catch(PDOException $e){

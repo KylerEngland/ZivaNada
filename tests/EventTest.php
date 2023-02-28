@@ -43,6 +43,7 @@ class EventTest extends \PHPUnit\Framework\TestCase{
             $database->deletePost($id);
         }
     }
+    
     public function testIncludeTime(){
         $eventTime = "11:59:59";
         $database = new DB;
