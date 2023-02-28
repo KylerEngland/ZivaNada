@@ -129,10 +129,11 @@ class DB{
                         `eventDate` = :eventDate,
                         `eventTime` = :eventTime
                     WHERE
-                        `id` = ?";
+                        `id` = :id";
 
             $statement = self::$connection->prepare($sql);
 
+           
             $statement->bindParam(':userID', $userID);
             $statement->bindParam(':title', $title);
             $statement->bindParam(':description', $description);
