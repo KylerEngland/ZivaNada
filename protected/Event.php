@@ -93,15 +93,15 @@ class Event{
                                     aria-label="Close"></button>
                             </div>
 
-                            <form name="newPost" action="protected/deledePost.inc.php" method="post">
+                            <form name="newPost" action="protected/deletePost.inc.php" method="post">
                                 <div class="modal-body">
                                     <div class="mb-1">
                                         <p class="text-center">Jeste li sigurni?</p>
+                                        <input type="hidden" name="postID" value="'. $this->id .'">
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Zatvori</button>
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zatvori</button>
                                     <button type="submit" class="btn btn-danger">Potvrdi</button>
                                 </div>
                             </form>

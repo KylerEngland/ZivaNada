@@ -43,15 +43,15 @@ class DB{
                         :eventTime
                     )";
     
-            $query = self::$connection->prepare($sql);
+            $statement = self::$connection->prepare($sql);
 
-            $query->bindParam(':userID', $userID);
-            $query->bindParam(':title', $title);
-            $query->bindParam(':description', $description);
-            $query->bindParam(':eventDate', $eventDate);
-            $query->bindParam(':eventTime', $eventTime);
+            $statement->bindParam(':userID', $userID);
+            $statement->bindParam(':title', $title);
+            $statement->bindParam(':description', $description);
+            $statement->bindParam(':eventDate', $date);
+            $statement->bindParam(':eventTime', $time);
             
-            $query->execute();
+            $statement->execute();
         }
         catch(PDOException $e){
             die( $e->getMessage() );
