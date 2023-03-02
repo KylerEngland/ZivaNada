@@ -1,12 +1,12 @@
 <?php
 
 class Event{
-    protected $id;
-    protected $userID;
-    protected $title;
-    protected $description;
-    protected $eventDate;
-    protected $eventTime;
+    private $id;
+    private $userID;
+    private $title;
+    private $description;
+    private $eventDate;
+    private $eventTime;
     function __construct($id, $userID, $title, $description, $eventDate, $eventTime){
         $this->id = $id;
         $this->userID = $userID;
