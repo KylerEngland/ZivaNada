@@ -1,12 +1,12 @@
 <?php
-require_once('protected/DB.php');
+require_once('TestDB.php');
 class EventTest extends \PHPUnit\Framework\TestCase{
     /*
     This test checks to see if posting an Event without a date properly outputs the TBD messsage. 
     Also makes sure the rest of the data gets posted correctly too.
     */
     public function testInsertNoDate(){
-        $database = new DB;
+        $database = new TEST_DB;
         $database->insertPost(6,"PHP-UnitTest","Description","","11:59:59");
         $posts = $database->showPosts(1);
         $id = "";
@@ -30,7 +30,7 @@ class EventTest extends \PHPUnit\Framework\TestCase{
     */
     public function testInsertWithDate(){
         $eventDate = "2015-08-17";
-        $database = new DB;
+        $database = new TEST_DB;
         $database->insertPost(6,"PHP-UnitTest","Description",$eventDate,"11:59:59");
         $posts = $database->showPosts(1);
         $id = "";
@@ -53,7 +53,7 @@ class EventTest extends \PHPUnit\Framework\TestCase{
     Also makes sure the rest of the data gets posted correctly too.
     */
     public function testInsertNoTime(){
-        $database = new DB;
+        $database = new TEST_DB;
         $database->insertPost(6,"PHP-UnitTest","Description","2015-08-17","");
         $posts = $database->showPosts(1);
         $id = "";
@@ -77,7 +77,7 @@ class EventTest extends \PHPUnit\Framework\TestCase{
     */
     public function testIncludeTime(){
         $eventTime = "11:59:59";
-        $database = new DB;
+        $database = new TEST_DB;
         $database->insertPost(6,"PHP-UnitTest","Description","2015-08-17",$eventTime);
         $posts = $database->showPosts(1);
         $id = "";
@@ -108,7 +108,7 @@ class EventTest extends \PHPUnit\Framework\TestCase{
         $newTime = "10:00:00";
         $postID = "";
 
-        $database = new DB;
+        $database = new TEST_DB;
         $database->insertPost(6,"PHP-UnitTest","Description","2015-08-17","11:59:59");
         $posts = $database->showPosts(1);
 
