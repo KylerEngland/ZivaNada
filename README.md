@@ -1,5 +1,7 @@
 # Ziva Nada Church Website
 
+This code is currently in development as part of my senior project. The final product will be a fully functional website for the Ziva Nada church in Split, Croatia.
+
 ## Usage
 ----
 
