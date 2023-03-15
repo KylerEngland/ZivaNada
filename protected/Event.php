@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * This is the event class. All events from the database are put into an array of events that are structured
+ * like this. All the data is set in private variables that can be accessed using getters and setters. The
+ * event is originally made using the __construct function that sets up the initial data (this data can be updated
+ * using the editPost method in the database). It has two main methods: outputEvent and outputAnchorEvent.
+ */
 class Event{
     private $id;
     private $userID;
@@ -48,6 +54,11 @@ class Event{
         return $this->eventTime;
     }
 
+    /**
+     * This function is used the most often. It is the function used to output the string meant to be echoed
+     * by the PHP into the HTML with all the structure we want an event to have, along with all the data in
+     * the correct location.
+     */
     public function outputEvent($loggedIn, $admin){
         $post = '
                 <div class="announcement-preview">
@@ -136,6 +147,11 @@ class Event{
         return $post;
     }
 
+    /**
+     * This function is used once at most every time the page is loaded. It is only used if the "load more" button is pressed.
+     * If it is pressed, then there is an anchor added with an id of "open-here", used to make sure the page scrolls down to 
+     * that location in the code, rather than making the user scroll all the way down.
+     */
     public function outputAnchorEvent($loggedIn, $admin){
         $post = '   <a id="open-here"></a>
                     <div class="announcement-preview">
