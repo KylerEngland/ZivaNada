@@ -10,6 +10,8 @@ class TEST_DB{
         PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8",
     );
 
+    //This function takes data from 'config.inc.php' that is unique to whatever database and whatever user is using it
+    //and uses it to set up the initial connection.
     function __construct(){
         if (!isset(self::$connection)) {
             try {
@@ -25,7 +27,8 @@ class TEST_DB{
         }
     }
 
-  
+    //Function tasked with inserting posts into the database. It takes the userID, title, description, 
+    //date and time to insert into the database.
     public static function insertPost($userID, $title, $description, $date, $time){
         try{
             $sql = "INSERT INTO `posts`(
@@ -61,6 +64,8 @@ class TEST_DB{
         }
     }
 
+    //Function for showing posts. As a parameter it takes the number of posts to output, so that we can
+    //change how many it needs to show, rather than always showing all of them.
     public static function showPosts($postNum){
         try{
             $sql = "SELECT
@@ -100,23 +105,9 @@ class TEST_DB{
             $pdo = null;
         }
     }
-    public static function getPostsNumber(){
-        try{
-            $sql = "SELECT COUNT(*) FROM posts";
-            $statement = self::$connection->prepare($sql);
-            $statement->execute();
 
-            $result = $statement->fetch();
-            return $result['COUNT(*)'];
-        }
-        catch(PDOException $e){
-            die( $e->getMessage() );
-        }
-        finally {
-            $pdo = null;
-        }
-    }
-
+    //This function handles updating any of the events in the database. It takes the ID parameter and will
+    //update the existing information for an event with that ID with the information given.
     public static function editPost($id, $userID, $title, $description, $eventDate, $eventTime){
 
         try{
@@ -152,6 +143,9 @@ class TEST_DB{
         }        
     }
 
+    //This function is in charge of deleting events. This is done during testing to ensure that test
+    //events do not clutter up the database. It is additionally done when an admin wants to delete an 
+    //event (like in situations when an event is cancelled).
     public static function deletePost($id){
         try{
             $sql = "DELETE FROM posts WHERE id = :id";

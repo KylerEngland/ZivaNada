@@ -2,16 +2,21 @@
 require_once('protected/DB.php');
 require_once('protected/UserDB.php');
 
+/*
+This function is tasked with loading the correct amount of post on the page depending on whether or not the "load"
+button has been pushed or not. By default it will load 5 posts. If the load more button is pressed it will load 5 more.
+*/
 function showPosts(){
+    $defaultNumberOfPosts = 5;
     if(isset($_POST['postNum'])){
         $postNum = $_POST['postNum'];
     }else{
-        $postNum = 5;
+        $postNum = $defaultNumberOfPosts;
     }
     $anchorLocation = $postNum;
     
     if(isset($_POST['load'])){
-        $postNum = $postNum + 5;
+        $postNum = $postNum + $defaultNumberOfPosts;
         $_POST['postNum'] = $postNum;
     }
 
@@ -36,6 +41,10 @@ function showPosts(){
     }
 }
 
+/*
+This function is tasked with verifying that the token given in the email matches the doken in the database, so that if
+someone tries to reset the password without the token they are unable to.
+*/
 function verifyToken($email, $token){
     $database = new UserDB;
     $result = $database->verifyToken($email, $token);
