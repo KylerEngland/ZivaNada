@@ -1,14 +1,25 @@
 <?php
+use function PHPUnit\Framework\assertEquals;
+use function PHPUnit\Framework\assertNotEquals;
 require_once('TestDB.php');
 class EventTest extends \PHPUnit\Framework\TestCase{
+
+    private static $database;
+
+    public static function setUpBeforeClass(): void
+    {
+        self::$database = new TEST_DB();
+    }
+
+
     /*
     This test checks to see if posting an Event without a date properly outputs the TBD messsage. 
     Also makes sure the rest of the data gets posted correctly too.
     */
     public function testInsertNoDate(){
-        $database = new TEST_DB;
-        $database->insertPost(6,"PHP-UnitTest","Description","","11:59:59");
-        $posts = $database->showPosts(1);
+       
+        self::$database->insertPost(6,"PHP-UnitTest","Description","","11:59:59");
+        $posts = self::$database->showPosts(1);
         $id = "";
         foreach($posts as $event){ 
             $id = $event->getPostID();
@@ -20,7 +31,7 @@ class EventTest extends \PHPUnit\Framework\TestCase{
         }
 
         if($id != ""){
-            $database->deletePost($id);
+            self::$database->deletePost($id);
         }
     }
 
@@ -30,9 +41,8 @@ class EventTest extends \PHPUnit\Framework\TestCase{
     */
     public function testInsertWithDate(){
         $eventDate = "2015-08-17";
-        $database = new TEST_DB;
-        $database->insertPost(6,"PHP-UnitTest","Description",$eventDate,"11:59:59");
-        $posts = $database->showPosts(1);
+        self::$database->insertPost(6,"PHP-UnitTest","Description",$eventDate,"11:59:59");
+        $posts = self::$database->showPosts(1);
         $id = "";
         foreach($posts as $event){ 
             $id = $event->getPostID();
@@ -44,7 +54,7 @@ class EventTest extends \PHPUnit\Framework\TestCase{
         }
 
         if($id != ""){
-            $database->deletePost($id);
+            self::$database->deletePost($id);
         }
     }
 
@@ -53,9 +63,9 @@ class EventTest extends \PHPUnit\Framework\TestCase{
     Also makes sure the rest of the data gets posted correctly too.
     */
     public function testInsertNoTime(){
-        $database = new TEST_DB;
-        $database->insertPost(6,"PHP-UnitTest","Description","2015-08-17","");
-        $posts = $database->showPosts(1);
+       
+        self::$database->insertPost(6,"PHP-UnitTest","Description","2015-08-17","");
+        $posts = self::$database->showPosts(1);
         $id = "";
         foreach($posts as $event){ 
             $id = $event->getPostID();
@@ -67,7 +77,7 @@ class EventTest extends \PHPUnit\Framework\TestCase{
         }
 
         if($id != ""){
-            $database->deletePost($id);
+            self::$database->deletePost($id);
         }
     }
     
@@ -77,9 +87,8 @@ class EventTest extends \PHPUnit\Framework\TestCase{
     */
     public function testIncludeTime(){
         $eventTime = "11:59:59";
-        $database = new TEST_DB;
-        $database->insertPost(6,"PHP-UnitTest","Description","2015-08-17",$eventTime);
-        $posts = $database->showPosts(1);
+        self::$database->insertPost(6,"PHP-UnitTest","Description","2015-08-17",$eventTime);
+        $posts = self::$database->showPosts(1);
         $id = "";
         foreach($posts as $event){ 
             $id = $event->getPostID();
@@ -91,7 +100,7 @@ class EventTest extends \PHPUnit\Framework\TestCase{
         }
 
         if($id != ""){
-            $database->deletePost($id);
+            self::$database->deletePost($id);
         }
     }
 
@@ -108,16 +117,15 @@ class EventTest extends \PHPUnit\Framework\TestCase{
         $newTime = "10:00:00";
         $postID = "";
 
-        $database = new TEST_DB;
-        $database->insertPost(6,"PHP-UnitTest","Description","2015-08-17","11:59:59");
-        $posts = $database->showPosts(1);
+        self::$database->insertPost(6,"PHP-UnitTest","Description","2015-08-17","11:59:59");
+        $posts = self::$database->showPosts(1);
 
         foreach($posts as $event){ 
             $postID = $event->getPostID();
         }
-        $database->editPost($postID,$userID, $newTitle, $newDesc, $newDate, $newTime);
+        self::$database->editPost($postID,$userID, $newTitle, $newDesc, $newDate, $newTime);
 
-        $posts = $database->showPosts(1);
+        $posts = self::$database->showPosts(1);
         foreach($posts as $event){
             $this->assertEquals(5, $event->getUserID());
             $this->assertEquals("This is the replacement title.", $event->getTitle());
@@ -127,13 +135,30 @@ class EventTest extends \PHPUnit\Framework\TestCase{
         }
 
         if($postID != ""){
-            $database->deletePost($postID);
+            self::$database->deletePost($postID);
         }
     }
 
-    // public function testDeletion(){
+    /*
+    This test makes sure that the delete method of the database functions properly. It inserts
+    a post into the database, then calls showPosts to get the ID from the post added, which it 
+    uses to delete the post. We then assert that only one row was affected by this. If it was 0, 
+    then there would have been nothing deleted, and if it was more than 1 then it would have 
+    deleted more than just one row.
+    */
+    public function testDeletion(){
+        
+        self::$database->insertPost(6,"PHP-UnitTests","Description","2015-08-17","11:59:59");
+        $posts = self::$database->showPosts(1);
+        $id = "";
+        foreach($posts as $event){ 
+            $id = $event->getPostID();
+        }
 
-    // }
+        $result = self::$database->deletePost($id);
+        $this->assertEquals(1, $result->rowCount());
+     
+    }
 }
 
 ?>
