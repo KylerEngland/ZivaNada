@@ -30,5 +30,3 @@ $database->register($_POST['registerName'], $_POST['registerLastName'], $_POST['
 header('Location: ../index.php');
 exit();
 ?>
-
-
