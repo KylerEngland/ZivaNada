@@ -164,6 +164,23 @@ class DB{
             $pdo = null;
         }
     }
+
+    //This function returns the number of existing posts.
+    public static function getPostsNumber(){
+        try{
+            $sql = "SELECT COUNT(*) FROM posts";
+            $statement = self::$connection->prepare($sql);
+            $statement->execute();
+            $result = $statement->fetch();
+            return $result['COUNT(*)'];
+        }
+        catch(PDOException $e){
+            die( $e->getMessage() );
+        }
+        finally {
+            $pdo = null;
+        }
+    }
 }
 
 ?>
