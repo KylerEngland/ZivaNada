@@ -70,21 +70,16 @@ class DB{
     public static function showPosts($postNum){
         try{
             $sql = "SELECT
-                        p.id,
-                        p.userID,
-                        p.title,
-                        p.description,
-                        p.eventDate,
-                        pr.ime,
-                        pr.prezime,
-                        p.eventTime
+                        id,
+                        userID,
+                        title,
+                        description,
+                        eventDate,
+                        eventTime
                     FROM
-                        posts AS p
-                    INNER JOIN PROFILES AS pr
-                    ON
-                        p.userID = pr.id
+                        posts
                     ORDER BY
-                        p.id DESC LIMIT :postNum";
+                        eventDate IS NULL, eventDate DESC LIMIT :postNum";
 
             $statement = self::$connection->prepare($sql);
             $statement->bindParam(':postNum', $postNum, PDO::PARAM_INT);
