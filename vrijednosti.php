@@ -55,34 +55,34 @@
                             <div class="row align-items-center mb-5">
                                 <div class="col-lg-6 order-2 order-lg-1">
                                     <!-- <i class="fa fa-bar-chart fa-2x mb-3 text-primary"></i> -->
-                                    <h2 class="fw-light">Štovanje</h2>
+                                    <h2 class="fw-bold">Štovanje</h2>
                                     <p class="fst-italic text-muted mb-4">
                                         Bog je dostojan našeg štovanja, stoga nam je važno osobno i zajedničko štovanje Boga  u Crkvi. 
                                         Držimo da je štovanje Boga životni stil koji uključuje Boga u svaki dio našeg života. 
                                         Ono je zahvalnost za sve ono što Bog jeste i sve dobro što je učinio u našim životima, 
                                         a koju izražavamo kroz molitve, svjedočanstva, glazbu,  ali i kroz svakodnevnu poslušnost Božjoj riječi.
                                     </p>
-                                    <p class="fw-bold mb-4">(Psalam 105,1-3)</p>
+                                    <p class="mb-4">(Psalam 105,1-3)</p>
                                 </div>
                                 <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2"><img
-                                        src="https://bootstrapious.com/i/snippets/sn-about/img-1.jpg" alt=""
+                                        src="assets/img/Values/Devotion.png" alt=""
                                         class="img-fluid mb-4 mb-lg-0"></div>
                             </div>
                             <div class="row align-items-center">
                                 <div class="col-lg-5 px-5 mx-auto">
                                     <img
-                                        src="https://bootstrapious.com/i/snippets/sn-about/img-2.jpg" alt=""
+                                        src="assets/img/Values/bible.png" alt=""
                                         class="img-fluid mb-4 mb-lg-0">
                                 </div>
                                 <div class="col-lg-6">
                                     <!-- <i class="fa fa-leaf fa-2x mb-3 text-primary"></i> -->
-                                    <h2 class="fw-light">Biblijsko podučavanje</h2>
+                                    <h2 class="fw-bold">Biblijsko podučavanje</h2>
                                     <p class="fst-italic text-muted mb-4">
                                         Biblija je nadahnuta,  nepogrješiva  Božja riječ upućena čovjeku.  
                                         Kao takva, ona je naš najveći autoritet koji nas usmjerava  u svakodnevnom životu.
                                         Prakticiramo biblijsko podučavanje zato što vjerujemo u promjenu koja nastaje u nama kada se oslanjamo na Božju riječ.  
                                     </p>
-                                    <p class="fw-bold mb-4">(2. Timoteju 3,16-17)</p>
+                                    <p class="mb-4">(2. Timoteju 3,16-17)</p>
                                 </div>
                             </div>
                         </div>
@@ -99,13 +99,13 @@
                                     <p class="fw-bold mb-4">(Evanđelje po Ivanu 3,16)</p>
                                 </div>
                                 <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2"><img
-                                        src="https://bootstrapious.com/i/snippets/sn-about/img-1.jpg" alt=""
+                                        src="assets/img/Values/evangelize.png" alt=""
                                         class="img-fluid mb-4 mb-lg-0"></div>
                             </div>
                             <div class="row align-items-center">
                                 <div class="col-lg-5 px-5 mx-auto">
                                     <img
-                                        src="https://bootstrapious.com/i/snippets/sn-about/img-2.jpg" alt=""
+                                        src="assets/img/Values/acceptance3.png" alt=""
                                         class="img-fluid mb-4 mb-lg-0">
                                 </div>
                                 <div class="col-lg-6">
@@ -135,13 +135,13 @@
                                     <p class="fw-bold mb-4">(Poslanica Efežanima 5,22-33, 6,1-4)</p>
                                 </div>
                                 <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2"><img
-                                        src="https://bootstrapious.com/i/snippets/sn-about/img-1.jpg" alt=""
+                                        src="assets/img/Values/family.png" alt=""
                                         class="img-fluid mb-4 mb-lg-0"></div>
                             </div>
                             <div class="row align-items-center">
                                 <div class="col-lg-5 px-5 mx-auto">
                                     <img
-                                        src="https://bootstrapious.com/i/snippets/sn-about/img-2.jpg" alt=""
+                                        src="assets/img/Values/serving.png" alt=""
                                         class="img-fluid mb-4 mb-lg-0">
                                 </div>
                                 <div class="col-lg-6">
