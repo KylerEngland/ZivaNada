@@ -34,7 +34,7 @@
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-md-10 col-lg-8 col-xl-7">
                     <div class="site-heading">
-                        <h1>Crkvene Vrijednosti</h1>
+                        <h1>Temeljne Vrijednosti</h1>
                     </div>
                 </div>
             </div>
@@ -45,20 +45,129 @@
     <div class="container px-4 px-lg-5">
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-md-10 col-lg-8 col-xl-7">
-                    <div class="d-flex justify-content-begin mb-4">
-                        <h2 class="post-title">Crkvene Vrijednosti</h2>
-                    </div>
-                    <div id="map" class="d-flex justify-content-begin mb-4">
-                       
-                        
+                <!-- <div class="d-flex justify-content-begin mb-4">
+                    <h1>Crkvene Vrijednosti</h1>
+                </div> -->
+                <div class="d-flex justify-content-begin mb-4">
+
+                    <div class="bg-white py-5">
+                        <div class="container py-5">
+                            <div class="row align-items-center mb-5">
+                                <div class="col-lg-6 order-2 order-lg-1">
+                                    <!-- <i class="fa fa-bar-chart fa-2x mb-3 text-primary"></i> -->
+                                    <h2 class="fw-light">Štovanje</h2>
+                                    <p class="fst-italic text-muted mb-4">
+                                        Bog je dostojan našeg štovanja, stoga nam je važno osobno i zajedničko štovanje Boga  u Crkvi. 
+                                        Držimo da je štovanje Boga životni stil koji uključuje Boga u svaki dio našeg života. 
+                                        Ono je zahvalnost za sve ono što Bog jeste i sve dobro što je učinio u našim životima, 
+                                        a koju izražavamo kroz molitve, svjedočanstva, glazbu,  ali i kroz svakodnevnu poslušnost Božjoj riječi.
+                                    </p>
+                                    <p class="fw-bold mb-4">(Psalam 105,1-3)</p>
+                                </div>
+                                <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2"><img
+                                        src="https://bootstrapious.com/i/snippets/sn-about/img-1.jpg" alt=""
+                                        class="img-fluid mb-4 mb-lg-0"></div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-lg-5 px-5 mx-auto">
+                                    <img
+                                        src="https://bootstrapious.com/i/snippets/sn-about/img-2.jpg" alt=""
+                                        class="img-fluid mb-4 mb-lg-0">
+                                </div>
+                                <div class="col-lg-6">
+                                    <!-- <i class="fa fa-leaf fa-2x mb-3 text-primary"></i> -->
+                                    <h2 class="fw-light">Biblijsko podučavanje</h2>
+                                    <p class="fst-italic text-muted mb-4">
+                                        Biblija je nadahnuta,  nepogrješiva  Božja riječ upućena čovjeku.  
+                                        Kao takva, ona je naš najveći autoritet koji nas usmjerava  u svakodnevnom životu.
+                                        Prakticiramo biblijsko podučavanje zato što vjerujemo u promjenu koja nastaje u nama kada se oslanjamo na Božju riječ.  
+                                    </p>
+                                    <p class="fw-bold mb-4">(2. Timoteju 3,16-17)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container py-5">
+                            <div class="row align-items-center mb-5">
+                                <div class="col-lg-6 order-2 order-lg-1">
+                                    <!-- <i class="fa fa-bar-chart fa-2x mb-3 text-primary"></i> -->
+                                    <h2 class="fw-light">Evangelizacija</h2>
+                                    <p class="fst-italic text-muted mb-4">
+                                        Bog je toliko ljubio svijet da je dao svog Sina jedinca da ne umre nitko 
+                                        tko u Njega vjeruje nego da ima vječni život. Važno nam je navjestiti ovu 
+                                        Radosnu vijest našim obiteljima, prijateljima, široj zajednici, te cijelom svijetu.
+                                    </p>
+                                    <p class="fw-bold mb-4">(Evanđelje po Ivanu 3,16)</p>
+                                </div>
+                                <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2"><img
+                                        src="https://bootstrapious.com/i/snippets/sn-about/img-1.jpg" alt=""
+                                        class="img-fluid mb-4 mb-lg-0"></div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-lg-5 px-5 mx-auto">
+                                    <img
+                                        src="https://bootstrapious.com/i/snippets/sn-about/img-2.jpg" alt=""
+                                        class="img-fluid mb-4 mb-lg-0">
+                                </div>
+                                <div class="col-lg-6">
+                                    <!-- <i class="fa fa-leaf fa-2x mb-3 text-primary"></i> -->
+                                    <h2 class="fw-light">Prihvaćanje</h2>
+                                    <p class="fst-italic text-muted mb-4">
+                                        Bog nas je bezuvjetno prihvatio kroz žrtvu Isusa Krista. 
+                                        Budući da smo prihvaćeni po Božjoj milosti, a ne po našim djelima,  
+                                        prihvaćamo druge, suosjećamo s njima i izražavamo im dobrodošlicu, 
+                                        bez obzira na dob, spol, etničko porijeklo, obrazovanje i socio-ekonomski status.
+                                    </p>
+                                    <p class="fw-bold mb-4">(Poslanica Rimljanima 15,7)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container py-5">
+                            <div class="row align-items-center mb-5">
+                                <div class="col-lg-6 order-2 order-lg-1">
+                                    <!-- <i class="fa fa-bar-chart fa-2x mb-3 text-primary"></i> -->
+                                    <h2 class="fw-light">Obitelj</h2>
+                                    <p class="fst-italic text-muted mb-4">
+                                        Obitelj je u središtu Božjeg nauma za čovjeka. 
+                                        Kao takva ona je mjesto gdje možemo iskusiti ljubav, povezanost, 
+                                        razumijevanje, ali i mjesto duhovnog i emocionalnog sazrijevanja pojedinca. 
+                                        Stoga njegujemo ozračje koje osnažuje brakove , obitelji i rad s djecom. 
+                                    </p>
+                                    <p class="fw-bold mb-4">(Poslanica Efežanima 5,22-33, 6,1-4)</p>
+                                </div>
+                                <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2"><img
+                                        src="https://bootstrapious.com/i/snippets/sn-about/img-1.jpg" alt=""
+                                        class="img-fluid mb-4 mb-lg-0"></div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-lg-5 px-5 mx-auto">
+                                    <img
+                                        src="https://bootstrapious.com/i/snippets/sn-about/img-2.jpg" alt=""
+                                        class="img-fluid mb-4 mb-lg-0">
+                                </div>
+                                <div class="col-lg-6">
+                                    <!-- <i class="fa fa-leaf fa-2x mb-3 text-primary"></i> -->
+                                    <h2 class="fw-light">Uključenost</h2>
+                                    <p class="fst-italic text-muted mb-4">
+                                        Svi vjernici su pozvani sudjelovati u životu Crkve. 
+                                        Potičemo uključenost svakog pojedinca u različite službe unutar Crkve, 
+                                        a sve prema darovima i talentima koje je primio od Boga. Uključenost vjernika
+                                        je važna jer doprinosi rastu Kristovog tijela, odnosno Crkve, te mu omogućuje 
+                                        iskustvo kršćanskog zajedništva. Stoga, svaki je vjernik važan i sastavni dio 
+                                        života i služenja Crkve.
+                                    </p>
+                                    <p class="fw-bold mb-4">(1. Petrova poslanica 4,10)</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <!-- <div class="col-md-10 col-lg-8 col-xl-7">
+                </div> -->
             </div>
         </div>
     </div>
     <!-- Footer file -->
-    <?php include_once('includes/footer.php')?>
+    <?php include_once('includes/footer.php') ?>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
