@@ -1180,6 +1180,133 @@
       ],
       "value": ""
     }]
+  }, {
+    "id": "e610cc77-c86b-40cd-9ed5-d15eddc9fb3a",
+    "name": "TestValues",
+    "commands": [{
+      "id": "1a14dce2-56b9-4bb6-92ea-6d857325f987",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/ZivaNada/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d359990a-2d5e-40d6-bb51-6dc7bce3a8f5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f48c8e4c-3913-47f2-adb7-a9e17142a449",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-item:nth-child(2) > .nav-link",
+      "targets": [
+        ["css=.nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Temeljne Vrijednosti')]", "xpath:link"],
+        ["xpath=//div[@id='navbarResponsive']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'vrijednosti.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c55189ac-ab44-4ae6-b665-9ae278458203",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.container:nth-child(1) > .row:nth-child(1) > .col-lg-5 > .img-fluid",
+      "targets": [
+        ["css=.container:nth-child(1) > .row:nth-child(1) > .col-lg-5 > .img-fluid", "css:finder"],
+        ["xpath=//div[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea76bbe1-4be4-4a86-b9fa-14f1cceb6be0",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.container:nth-child(1) > .row:nth-child(2) .img-fluid",
+      "targets": [
+        ["css=.container:nth-child(1) > .row:nth-child(2) .img-fluid", "css:finder"],
+        ["xpath=//div[2]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6cddad2e-cb10-4b53-a101-4e672d12b1e8",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.container:nth-child(2) > .row:nth-child(1) .img-fluid",
+      "targets": [
+        ["css=.container:nth-child(2) > .row:nth-child(1) .img-fluid", "css:finder"],
+        ["xpath=//div[2]/div/div[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc75efa4-98d7-4c0b-9954-d228e0b954d7",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.container:nth-child(2) > .row:nth-child(2) .img-fluid",
+      "targets": [
+        ["css=.container:nth-child(2) > .row:nth-child(2) .img-fluid", "css:finder"],
+        ["xpath=//div[2]/div[2]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c38f624a-93b8-4645-a74a-fb5be0eae429",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.container:nth-child(3) > .row:nth-child(1) .img-fluid",
+      "targets": [
+        ["css=.container:nth-child(3) > .row:nth-child(1) .img-fluid", "css:finder"],
+        ["xpath=//div[3]/div/div[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe61a101-a5a3-4f90-84c4-847b5eafaf40",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.container:nth-child(3) > .row:nth-child(2) .img-fluid",
+      "targets": [
+        ["css=.container:nth-child(3) > .row:nth-child(2) .img-fluid", "css:finder"],
+        ["xpath=//div[3]/div[2]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0feff0c-a0f8-401f-8be8-b65069918999",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Izvori",
+      "targets": [
+        ["linkText=Izvori", "linkText"],
+        ["css=.small:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Izvori')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'credits.php')]", "xpath:href"],
+        ["xpath=//div[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Izvori')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c7e601b-58a9-41e0-864d-8b8bd9c1e2af",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.d-flex:nth-child(1) > .post-title",
+      "targets": [
+        ["css=.d-flex:nth-child(1) > .post-title", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Ikone')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "31b8e6f3-1b15-4253-a793-680204fa15dd",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.d-flex:nth-child(3) > .post-title",
+      "targets": [
+        ["css=.d-flex:nth-child(3) > .post-title", "css:finder"],
+        ["xpath=//div[3]/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Pozadine')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
   }],
   "suites": [{
     "id": "0d3b23f3-0306-4558-9086-891c326d47cc",
