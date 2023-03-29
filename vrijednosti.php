@@ -48,6 +48,8 @@
                 <div class="d-flex justify-content-begin mb-4">
 
                     <div class="bg-white py-5">
+                        <!-- Container full of divs that are organized into rows and columns containing church value information -->
+                        <!-- The organization of the divs is flipped on every other one to make the organization of the page look more aesthetically pleasing -->
                         <div class="container py-5">
                             <div class="row align-items-center mb-5">
                                 <div class="col-lg-6 order-2 order-lg-1">

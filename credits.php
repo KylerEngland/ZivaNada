@@ -45,7 +45,8 @@
                 <div class="d-flex justify-content-begin mb-4">
                     <h2 class="post-title">Ikone</h2>
                 </div>
-                <!-- Three columns of text below the carousel -->
+
+                <!-- Columngs of icons and their credits for icons.-->
                 <div class="row credits">
                     <div class="col-sm">
                         <img src="assets/img/Values/Devotion.png" alt="" class="img-fluid mb-4 mb-lg-0"
@@ -54,7 +55,7 @@
                         <p><a class="btn btn-secondary btn-sm" href="https://www.flaticon.com/free-icons/devotion"
                                 target="_blank">View details
                                 &raquo;</a></p>
-                    </div><!-- /.col-lg-4 -->
+                    </div>
 
                     <div class="col-sm">
                         <img src="assets/img/Values/bible.png" alt="" class="img-fluid mb-4 mb-lg-0"
@@ -63,7 +64,7 @@
                         <p><a class="btn btn-secondary btn-sm" href="https://www.flaticon.com/free-icons/church"
                                 target="_blank">View details
                                 &raquo;</a></p>
-                    </div><!-- /.col-lg-4 -->
+                    </div>
 
                     <div class="col-sm">
                         <img src="assets/img/Values/evangelize.png" alt="" class="img-fluid mb-4 mb-lg-0"
@@ -72,7 +73,7 @@
                         <p><a class="btn btn-secondary btn-sm" href="https://www.flaticon.com/free-icons/speak"
                                 target="_blank">View details
                                 &raquo;</a></p>
-                    </div><!-- /.col-lg-4 -->
+                    </div>
 
                     <div class="col-sm">
                         <img src="assets/img/Values/acceptance3.png" alt="" class="img-fluid mb-4 mb-lg-0"
@@ -81,7 +82,7 @@
                         <p><a class="btn btn-secondary btn-sm" href="https://www.flaticon.com/free-icons/hug"
                                 target="_blank">View details
                                 &raquo;</a></p>
-                    </div><!-- /.col-lg-4 -->
+                    </div>
 
                     <div class="col-sm">
                         <img src="assets/img/Values/family.png" alt="" class="img-fluid mb-4 mb-lg-0"
@@ -89,7 +90,7 @@
                         <p>Family icons created by yut1655 - Flaticon</p>
                         <p><a class="btn btn-secondary btn-sm" href="https://www.flaticon.com/free-icons/family"
                                 target="_blank">View details &raquo;</a></p>
-                    </div><!-- /.col-lg-4 -->
+                    </div>
 
                     <div class="col-sm">
                         <img src="assets/img/Values/serving.png" alt="" class="img-fluid mb-4 mb-lg-0"
@@ -97,23 +98,25 @@
                         <p>Help icons created by Freepik - Flaticon</p>
                         <p><a class="btn btn-secondary btn-sm" href="https://www.flaticon.com/free-icons/help"
                                 target="_blank">View details &raquo;</a></p>
-                    </div><!-- /.col-lg-4 -->
-                </div><!-- /.row -->
+                    </div>
+                </div>
 
 
                 <div class="d-flex justify-content-begin mb-4">
                     <h2 class="post-title">Pozadine</h2>
                 </div>
+
                 <!-- Four columns with backgrounds and their credits -->
                 <div class="row credits">
                     <div class="col-sm">
                         <img src="assets/img/Split.jpg" alt="" class="img-fluid mb-4 mb-lg-0"
                             style="height:50%; width:auto;">
                         <p>Luciann Photography</p>
-                        <p><a class="btn btn-secondary btn-sm" href="https://www.pexels.com/photo/an-aerial-shot-of-the-city-of-split-in-croatia-5984680"
+                        <p><a class="btn btn-secondary btn-sm"
+                                href="https://www.pexels.com/photo/an-aerial-shot-of-the-city-of-split-in-croatia-5984680"
                                 target="_blank">View details
                                 &raquo;</a></p>
-                    </div><!-- /.col-lg-4 -->
+                    </div>
 
                     <div class="col-sm">
                         <img src="assets/img/RivaDrone.jpg" alt="" class="img-fluid mb-4 mb-lg-0"
@@ -122,7 +125,7 @@
                         <p><a class="btn btn-secondary btn-sm" href="https://unsplash.com/photos/HjHnI35B4YY"
                                 target="_blank">View details
                                 &raquo;</a></p>
-                    </div><!-- /.col-lg-4 -->
+                    </div>
 
                     <div class="col-sm">
                         <img src="assets/img/riva.jpg" alt="" class="img-fluid mb-4 mb-lg-0"
@@ -131,7 +134,7 @@
                         <p><a class="btn btn-secondary btn-sm" href="https://unsplash.com/photos/AHdHOIjJa64"
                                 target="_blank">View details
                                 &raquo;</a></p>
-                    </div><!-- /.col-lg-4 -->
+                    </div>
 
                     <div class="col-sm">
                         <img src="assets/img/birdseye.jpg" alt="" class="img-fluid mb-4 mb-lg-0"
@@ -140,16 +143,17 @@
                         <p><a class="btn btn-secondary btn-sm" href="https://unsplash.com/photos/O3nh4XGtPAI"
                                 target="_blank">View details
                                 &raquo;</a></p>
-                    </div><!-- /.col-lg-4 -->
-                </div><!-- /.row -->
+                    </div>
+                </div>
 
             </div>
         </div>
     </div>
     <style>
-    .row credits {
-        margin-bottom: 2px; /* adjust the value as needed */
-    }
+        .row credits {
+            margin-bottom: 2px;
+            /* adjust the value as needed */
+        }
     </style>
     <!-- Footer file -->
     <?php include_once('includes/footer.php') ?>
