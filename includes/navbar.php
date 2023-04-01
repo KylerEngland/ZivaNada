@@ -15,7 +15,7 @@
                     <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="lokacija.php">Lokacija</a></li>
                 </ul>
                 <div class="dropdown">
-                <a class="btn btn-primary dropdown-toggle btn-sm" href="#" role="button" id="dropdownMenuLink"
+                <a class="btn btn-outline-secondary dropdown-toggle btn-sm" href="#" role="button" id="dropdownMenuLink"
                     data-bs-toggle="dropdown" aria-expanded="false">
                     <img src="assets/img/Flags/hr.svg" alt="" style="height:1.5em; width:auto;">
                 </a>
