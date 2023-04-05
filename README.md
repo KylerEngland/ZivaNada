@@ -34,12 +34,10 @@ define('MY_EMAIL', 'senders (most likely your) email here');
 * The final step will be to download the dependencies
 * First off, to be able to add dependencies to your php, download composer [here](https://getcomposer.org/download/).
 * Then, at the top level of your folder, create a valid json called composer.json.
-* To be able to install Jest for javascript testing, download npm from [here](https://github.com/coreybutler/nvm-windows).
 * Finally, run these commands:
 ```powershell
 composer config
 composer require phpmailer/phpmailer
-npm -i jest --save-dev
 ```
 
 
