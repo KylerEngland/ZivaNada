@@ -12,7 +12,7 @@ if ( !isset($_POST['loginEmail']) || !isset($_POST['loginPass']) ) {
 
 $result = $database->login($_POST['loginEmail'], $_POST['loginPass']);
 if($result == 1){
-    header('Location: ../index.php');
+    header('Location: ../dogadaji.php');
 }else{
     //Result 0 means that it was the wrong email or password
     header('Location: ../loginPage.php?result=0');

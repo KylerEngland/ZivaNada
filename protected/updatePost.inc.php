@@ -8,7 +8,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['admin'] == 1){
 }else{
     echo("You do not have permission to edit this content.");
 }
-header('Location: ../index.php');
+header('Location: ../dogadaji.php');
 exit();
 
 ?>
