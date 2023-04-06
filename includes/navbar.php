@@ -1,3 +1,6 @@
+<?php
+require_once('protected/functions.inc.php');
+?>
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
     <div class="container px-4 px-lg-5">
@@ -22,11 +25,7 @@
                 </a>
 
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <li><a class="dropdown-item" href="en/<?php if (basename($_SERVER['PHP_SELF']) == "dogadaji.php") {
-                        echo ("vrijednosti.php");
-                    } else {
-                        echo basename($_SERVER['PHP_SELF']);
-                    } ?>"><img src="assets/img/Flags/us.svg" alt="" style="height:1.5em; width:auto;">&ensp;English</a>
+                    <li><a class="dropdown-item" href="en/<?= redirectTranslation(basename($_SERVER['PHP_SELF'])); ?>"><img src="assets/img/Flags/us.svg" alt="" style="height:1.5em; width:auto;">&ensp;English</a>
                     </li>
 
                 </ul>

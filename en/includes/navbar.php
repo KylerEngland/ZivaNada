@@ -21,7 +21,7 @@
                 </a>
 
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <li><a class="dropdown-item" href="../<?php echo basename($_SERVER['PHP_SELF']); ?>"><img
+                    <li><a class="dropdown-item" href="../<?= redirectTranslation(basename($_SERVER['PHP_SELF'])); ?>"><img
                                 src="../assets/img/Flags/hr.svg" alt=""
                                 style="height:1.5em; width:auto;">&ensp;Hrvatski</a></li>
                 </ul>
