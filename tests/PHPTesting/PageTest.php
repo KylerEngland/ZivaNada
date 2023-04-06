@@ -1,5 +1,5 @@
 <?php
-require_once('protected/functions.inc.php');
+require_once('protected/redirect.inc.php');
 use function PHPUnit\Framework\assertEquals;
 use function PHPUnit\Framework\assertNotEquals;
 

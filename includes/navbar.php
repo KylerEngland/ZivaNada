@@ -1,5 +1,5 @@
 <?php
-require_once('protected/functions.inc.php');
+require_once('protected/redirect.inc.php');
 ?>
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">

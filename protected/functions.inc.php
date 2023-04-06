@@ -51,13 +51,4 @@ function verifyToken($email, $token){
     return $result;
 }
 
-function redirectTranslation($currentFile){
-    $redirectionFile = "vrijednosti.php";
-    if($currentFile == "dogadaji.php"){
-        return $redirectionFile;
-    }else{
-        return $currentFile;
-    }
-}
-
 ?>

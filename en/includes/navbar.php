@@ -1,3 +1,6 @@
+<?php
+require_once('../protected/redirect.inc.php');
+?>
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
     <div class="container px-4 px-lg-5">
