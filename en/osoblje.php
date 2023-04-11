@@ -169,9 +169,10 @@
                                     <h2 class="fw-bold">SLAĐANA</h2>
                                     <h2 class="fw-light fst-italic">Women's Ministry Leader</h2>
                                     <p class="text-muted mb-4">
-                                        She wants women to connect and encourage each other. She leads our women's
-                                        ministry group called "Excellent Women" and organizes meetings and various gatherings. 
-                                        She wants to run the race with Jesus to the end alongside her sisters in Christ.
+                                        She has a desire for women to connect and encourage each other. She leads our
+                                        women's ministry group called "Excellent Women" and organizes meetings and
+                                        various gatherings. She wants to run the race with Jesus to the end alongside
+                                        her sisters in Christ.
                                     </p>
                                 </div>
                             </div>
