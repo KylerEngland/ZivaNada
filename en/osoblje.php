@@ -58,14 +58,14 @@
                                         understandable way.
                                     </p>
                                 </div>
-                                <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2"><img
-                                        src="../assets/img/Staff/placeholder.png" alt="" class="img-fluid mb-4 mb-lg-0">
+                                <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2 text-center">
+                                    <img src="../assets/img/Staff/placeholder.png" alt="" class="img-fluid mb-4 mb-lg-0">
                                 </div>
                             </div>
+                            <hr>
                             <div class="row align-items-center">
-                                <div class="col-lg-5 px-5 mx-auto">
-                                    <img src="../assets/img/Staff/placeholder.png" alt=""
-                                        class="img-fluid mb-4 mb-lg-0">
+                                <div class="col-lg-5 px-5 mx-auto text-center">
+                                    <img src="../assets/img/Staff/placeholder.png" alt="" class="img-fluid mb-4 mb-lg-0">
                                 </div>
                                 <div class="col-lg-6">
                                     <h2 class="fw-bold">HELGA</h2>
@@ -78,6 +78,7 @@
                                     </p>
                                 </div>
                             </div>
+                            <hr>
                         </div>
                         <div class="container py-5">
                             <div class="row align-items-center mb-5">
@@ -91,12 +92,13 @@
                                         of our church.
                                     </p>
                                 </div>
-                                <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2"><img
+                                <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2 text-center"><img
                                         src="../assets/img/Staff/placeholder.png" alt="" class="img-fluid mb-4 mb-lg-0">
                                 </div>
                             </div>
+                            <hr>
                             <div class="row align-items-center">
-                                <div class="col-lg-5 px-5 mx-auto">
+                                <div class="col-lg-5 px-5 mx-auto text-center">
                                     <img src="../assets/img/Staff/placeholder.png" alt=""
                                         class="img-fluid mb-4 mb-lg-0">
                                 </div>
@@ -111,6 +113,7 @@
                                     </p>
                                 </div>
                             </div>
+                            <hr>
                         </div>
                         <div class="container py-5">
                             <div class="row align-items-center mb-5">
@@ -123,12 +126,13 @@
                                         tidy so that it can be used to glorify God.
                                     </p>
                                 </div>
-                                <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2"><img
+                                <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2 text-center"><img
                                         src="../assets/img/Staff/placeholder.png" alt="" class="img-fluid mb-4 mb-lg-0">
                                 </div>
                             </div>
+                            <hr>
                             <div class="row align-items-center">
-                                <div class="col-lg-5 px-5 mx-auto">
+                                <div class="col-lg-5 px-5 mx-auto text-center">
                                     <img src="../assets/img/Staff/placeholder.png" alt=""
                                         class="img-fluid mb-4 mb-lg-0">
                                 </div>
@@ -143,6 +147,7 @@
                                     </p>
                                 </div>
                             </div>
+                            <hr>
                         </div>
                         <div class="container py-5">
                             <div class="row align-items-center mb-5">
@@ -156,12 +161,13 @@
                                         participants of a sincere and committed fellowship.
                                     </p>
                                 </div>
-                                <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2"><img
+                                <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2 text-center"><img
                                         src="../assets/img/Staff/placeholder.png" alt="" class="img-fluid mb-4 mb-lg-0">
                                 </div>
                             </div>
+                            <hr>
                             <div class="row align-items-center">
-                                <div class="col-lg-5 px-5 mx-auto">
+                                <div class="col-lg-5 px-5 mx-auto text-center">
                                     <img src="../assets/img/Staff/placeholder.png" alt=""
                                         class="img-fluid mb-4 mb-lg-0">
                                 </div>
