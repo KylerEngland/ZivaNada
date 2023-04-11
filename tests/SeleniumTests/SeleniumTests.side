@@ -14,6 +14,19 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "adefe15d-3fda-4344-90a1-153fc6b94e0c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-item:nth-child(3) > .nav-link",
+      "targets": [
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Temeljne\n                        Vrijednosti')]", "xpath:link"],
+        ["xpath=//div[@id='navbarResponsive']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'vrijednosti.php')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
       "id": "c99f1666-8632-442a-84c7-7c8cf6c34360",
       "comment": "",
       "command": "setWindowSize",
@@ -220,7 +233,7 @@
       "id": "39bacf03-b502-43ce-91e9-5150a60150ca",
       "comment": "",
       "command": "click",
-      "target": "css=.mb-3:nth-child(4) > .form-control",
+      "target": "xpath=//textarea[@name='description']",
       "targets": [
         ["css=.mb-3:nth-child(4) > .form-control", "css:finder"],
         ["xpath=//textarea[@name='description']", "xpath:attributes"],
@@ -232,7 +245,7 @@
       "id": "32a8946e-3b3f-4410-a1df-37a3ffe21318",
       "comment": "",
       "command": "type",
-      "target": "css=.mb-3:nth-child(6) > .form-control",
+      "target": "xpath=//textarea[@name='description']",
       "targets": [
         ["css=.mb-3:nth-child(6) > .form-control", "css:finder"],
         ["xpath=//textarea[@name='description']", "xpath:attributes"],
@@ -303,7 +316,7 @@
       "id": "7ba10fdf-d8cf-4ccf-81a4-7377978d51af",
       "comment": "",
       "command": "click",
-      "target": "css=.btn",
+      "target": "xpath=//a[contains(text(),'Logout')]",
       "targets": [
         ["css=.btn", "css:finder"],
         ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
@@ -321,6 +334,19 @@
       "command": "open",
       "target": "http://localhost/ZivaNada/",
       "targets": [],
+      "value": ""
+    }, {
+      "id": "3418f7f1-3361-4f01-8d39-49b7c55c6799",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-item:nth-child(3) > .nav-link",
+      "targets": [
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Temeljne\n                        Vrijednosti')]", "xpath:link"],
+        ["xpath=//div[@id='navbarResponsive']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'vrijednosti.php')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"]
+      ],
       "value": ""
     }, {
       "id": "c563956b-451f-4397-8af0-2397385eb005",
@@ -487,7 +513,7 @@
       "id": "c03f8123-2bf8-48c5-a319-efd8051319a7",
       "comment": "",
       "command": "type",
-      "target": "css=.mb-3:nth-child(6) > .form-control",
+      "target": "xpath=//textarea[@name='description']",
       "targets": [
         ["css=.mb-3:nth-child(6) > .form-control", "css:finder"],
         ["xpath=//textarea[@name='description']", "xpath:attributes"],
@@ -589,7 +615,7 @@
       "id": "93870138-39bc-44cb-8ee3-0babd2313711",
       "comment": "",
       "command": "click",
-      "target": "css=.btn",
+      "target": "xpath=//a[contains(text(),'Logout')]",
       "targets": [
         ["css=.btn", "css:finder"],
         ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
@@ -607,6 +633,19 @@
       "command": "open",
       "target": "http://localhost/ZivaNada/",
       "targets": [],
+      "value": ""
+    }, {
+      "id": "3543003d-e814-4c9e-8625-ebc7b0773dd0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-item:nth-child(3) > .nav-link",
+      "targets": [
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Temeljne\n                        Vrijednosti')]", "xpath:link"],
+        ["xpath=//div[@id='navbarResponsive']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'vrijednosti.php')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"]
+      ],
       "value": ""
     }, {
       "id": "ecdfaf2f-76bc-485e-8a51-ea32268381c4",
@@ -762,7 +801,7 @@
       "id": "d264c5ce-ed57-4e97-bd8f-d290ee74151c",
       "comment": "",
       "command": "type",
-      "target": "css=.mb-3:nth-child(6) > .form-control",
+      "target": "xpath=//textarea[@name='description']",
       "targets": [
         ["css=.mb-3:nth-child(6) > .form-control", "css:finder"],
         ["xpath=//textarea[@name='description']", "xpath:attributes"],
@@ -924,7 +963,7 @@
       "id": "ab862fb7-9419-4e39-88cb-1713d1ee3b35",
       "comment": "",
       "command": "click",
-      "target": "css=.btn",
+      "target": "xpath=//a[contains(text(),'Logout')]",
       "targets": [
         ["css=.btn", "css:finder"],
         ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
@@ -942,6 +981,19 @@
       "command": "open",
       "target": "http://localhost/ZivaNada/",
       "targets": [],
+      "value": ""
+    }, {
+      "id": "ae6ff610-9e6c-4c9a-805e-e5071ba13f3b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-item:nth-child(3) > .nav-link",
+      "targets": [
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Temeljne\n                        Vrijednosti')]", "xpath:link"],
+        ["xpath=//div[@id='navbarResponsive']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'vrijednosti.php')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"]
+      ],
       "value": ""
     }, {
       "id": "9102446f-9d1c-47e1-ad4b-0a0ac5e1afc2",
@@ -1171,7 +1223,7 @@
       "id": "0d93d6ec-7b32-48f4-8420-7c045d3297cd",
       "comment": "",
       "command": "click",
-      "target": "css=.btn",
+      "target": "xpath=//a[contains(text(),'Logout')]",
       "targets": [
         ["css=.btn", "css:finder"],
         ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
@@ -1189,6 +1241,19 @@
       "command": "open",
       "target": "http://localhost/ZivaNada/",
       "targets": [],
+      "value": ""
+    }, {
+      "id": "7e26842d-8c7b-47be-93dc-6bfdd9d7d85b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-item:nth-child(3) > .nav-link",
+      "targets": [
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Temeljne\n                        Vrijednosti')]", "xpath:link"],
+        ["xpath=//div[@id='navbarResponsive']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'vrijednosti.php')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"]
+      ],
       "value": ""
     }, {
       "id": "d359990a-2d5e-40d6-bb51-6dc7bce3a8f5",
