@@ -134,7 +134,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <h2 class="fw-bold">JELENA & DUJE</h2>
-                                    <h2 class="fw-light fst-italic">Children's ministry</h2>
+                                    <h2 class="fw-light fst-italic">Children's Ministry</h2>
                                     <p class="text-muted mb-4">
                                         Duje and Jelena Rnjak lead a team of teachers who educate children
                                         about God's Word, love, peace, creation, and the miracles and teachings
