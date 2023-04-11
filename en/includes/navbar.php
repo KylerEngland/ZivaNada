@@ -13,8 +13,8 @@ require_once('../protected/redirect.inc.php');
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto py-4 py-lg-0">
-                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="vrijednosti.php">Core Values</a>
-                </li>
+            <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="osoblje.php">Staff</a></li>
+                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="vrijednosti.php">Core Values</a></li>
                 <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="lokacija.php">Location</a></li>
             </ul>
             <div class="dropdown">
