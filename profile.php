@@ -59,7 +59,7 @@ session_start();
                             <?= $_SESSION['email'] ?>
                         </p>
 
-                        <a class="btn btn-primary text-uppercase" href="protected/logout.inc.php">Logout</a>
+                        <a class="btn btn-primary text-uppercase" href="protected/logout.inc.php">Odjava</a>
                     </div>
                 </div>
             </div>
