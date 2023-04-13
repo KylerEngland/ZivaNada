@@ -33,7 +33,7 @@
         <h1>Živa Nada</h1>
         <span>Kristova Crkva</span>
         <div class="middle-text-subheading">
-            <a class="btn btn-primary btn-lg" href="vrijednosti.php">Saznaj vise &raquo;</a>
+            <a class="btn btn-primary btn-lg" href="vrijednosti.php">Saznaj više &raquo;</a>
         </div>
     </div>
 
