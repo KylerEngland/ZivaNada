@@ -71,7 +71,7 @@
             <div class="tab-content">
                 <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
                     <form action="protected/authenticate.inc.php" method="post">
-                        <p class="text-center">Postojeci profil:</p>
+                        <p class="text-center">Postojeći profil:</p>
 
                         <!-- Email input -->
                         <div class="form-outline mb-4">
