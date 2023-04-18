@@ -102,7 +102,7 @@
         ["xpath=//div[@id='pills-login']/form/div[2]/input", "xpath:idRelative"],
         ["xpath=//div[2]/input", "xpath:position"]
       ],
-      "value": "K6VE6ywCrtB"
+      "value": "12345678"
     }, {
       "id": "abbe28bc-d123-4608-9266-93520a6b76aa",
       "comment": "",
@@ -424,7 +424,7 @@
         ["xpath=//div[@id='pills-login']/form/div[2]/input", "xpath:idRelative"],
         ["xpath=//div[2]/input", "xpath:position"]
       ],
-      "value": "K6VE6ywCrtB"
+      "value": "12345678"
     }, {
       "id": "1f72038d-32f9-438b-b74b-5862b4587f62",
       "comment": "",
@@ -723,7 +723,7 @@
         ["xpath=//div[@id='pills-login']/form/div[2]/input", "xpath:idRelative"],
         ["xpath=//div[2]/input", "xpath:position"]
       ],
-      "value": "K6VE6ywCrtB"
+      "value": "12345678"
     }, {
       "id": "4bf88e91-3f12-4602-a66c-2119afbe942a",
       "comment": "",
@@ -1071,7 +1071,7 @@
         ["xpath=//div[@id='pills-login']/form/div[2]/input", "xpath:idRelative"],
         ["xpath=//div[2]/input", "xpath:position"]
       ],
-      "value": "K6VE6ywCrtB"
+      "value": "12345678"
     }, {
       "id": "7fa3308e-aa91-4bca-9491-ac6ba6bf97ed",
       "comment": "",
