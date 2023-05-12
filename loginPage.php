@@ -45,13 +45,13 @@
     if (isset($_GET['error'])) {
         if ($_GET['error'] == 1) {
             // Could not get the data that should have been sent.
-            echo '<script type="text/javascript">window.onload = function () { alert("Please complete the registration form!"); } </script>';
+            echo '<script type="text/javascript">window.onload = function () { alert("Molimo ispunite sva polja za registraciju!"); } </script>';
         } else if ($_GET['error'] == 2) {
             // One or more values are empty.
-            echo '<script type="text/javascript">window.onload = function () { alert("Please complete the registration form."); } </script>';
+            echo '<script type="text/javascript">window.onload = function () { alert("Molimo ispunite sva polja za registraciju."); } </script>';
         } else if ($_GET['error'] == 3) {
             // Invalid email address.
-            echo '<script type="text/javascript">awindow.onload = function () { alert("Incorrect email."); }</script>';
+            echo '<script type="text/javascript">awindow.onload = function () { alert("Pogrešan email."); }</script>';
 
         }
     }
@@ -174,6 +174,7 @@
                             <label class="form-label" for="firstPass">Nova lozinka</label>
                         </div>
 
+                        <div id="error-text" class="text-danger"></div>
                         <!-- Confirm password input -->
                         <div class="form-outline mb-4">
                             <input type="password" id="secondPass" class="form-control" name="secondPass" />
