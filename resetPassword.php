@@ -62,13 +62,13 @@
     
                                 <h5 class="card-title">Nova Lozinka:</h5>
                                 <div class="field">
-                                    <input name="newPassword" id="newPassword" type="password" class="form-control mb-3" >
+                                    <input name="firstPass" id="firstPass" type="password" class="form-control mb-3" >
                                 </div>
 
                                 <h5 class="card-title">Ponovi Lozinku:</h5>
                                 <div id="error-text" class="text-danger"></div>
                                 <div class="field">
-                                    <input name="newPassword2" id="newPassword2" type="password" class="form-control mb-3">
+                                    <input name="secondPass" id="secondPass" type="password" class="form-control mb-3">
                                 </div>
 
                                 <input type="hidden" name="email" value=<?=$_GET['email']?>>

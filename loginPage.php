@@ -149,12 +149,18 @@
 
                         <!-- Password input -->
                         <div class="form-outline mb-4">
-                            <input type="password" id="registerPassword" class="form-control" name="registerPassword"/>
-                            <label class="form-label" for="registerPassword">Nova lozinka</label>
+                            <input type="password" id="firstPass" class="form-control" name="firstPass"/>
+                            <label class="form-label" for="firstPass">Nova lozinka</label>
+                        </div>
+
+                        <!-- Confirm password input -->
+                        <div class="form-outline mb-4">
+                            <input type="password" id="secondPass" class="form-control" name="secondPass"/>
+                            <label class="form-label" for="secondPass">Nova lozinka</label>
                         </div>
 
                         <!-- Submit button -->
-                        <button type="submit" class="btn btn-primary btn-block mb-3">Registriraj se</button>
+                        <button id="button" type="submit" class="btn btn-primary btn-block mb-3">Registriraj se</button>
                     </form>
                 </div>
             </div>
@@ -168,6 +174,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+    <script src="js/validate.js"></script>
 </body>
 
 </html>
