@@ -1,16 +1,3 @@
-<?php 
-    if(isset($_GET['result'])){
-        if($_GET['result']==0){
-            echo('	<script type="text/javascript">
-                        window.onload = function () { alert("Pogrešan email ili lozinka."); } 
-                    </script>'); 
-        }else if($_GET['result']==2){
-            echo('	<script type="text/javascript">
-                        window.onload = function () { alert("Ispunite polja za email i za lozinku."); } 
-                    </script>');
-        }
-    }
-?>
 <!DOCTYPE html>
 <html lang="hr">
 
@@ -38,6 +25,37 @@
 
 <body>
     <?php include_once('includes/navbar.php'); ?>
+
+    <?php
+    if (isset($_GET['result'])) {
+        if ($_GET['result'] == 0) {
+            echo ('	<script type="text/javascript">
+                        window.onload = function () { alert("Pogrešan email ili lozinka."); } 
+                    </script>');
+        } else if ($_GET['result'] == 2) {
+            echo ('	<script type="text/javascript">
+                        window.onload = function () { alert("Ispunite polja za email i za lozinku!"); } 
+                    </script>');
+        } else if ($_GET['result'] == 3) {
+            echo ('	<script type="text/javascript">
+                        window.onload = function () { alert("Ispunite polja za email i za lozinku."); } 
+                    </script>');
+        }
+    }
+    if (isset($_GET['error'])) {
+        if ($_GET['error'] == 1) {
+            // Could not get the data that should have been sent.
+            echo '<script type="text/javascript">window.onload = function () { alert("Please complete the registration form!"); } </script>';
+        } else if ($_GET['error'] == 2) {
+            // One or more values are empty.
+            echo '<script type="text/javascript">window.onload = function () { alert("Please complete the registration form."); } </script>';
+        } else if ($_GET['error'] == 3) {
+            // Invalid email address.
+            echo '<script type="text/javascript">awindow.onload = function () { alert("Incorrect email."); }</script>';
+
+        }
+    }
+    ?>
     <!-- Page Header-->
     <header class="masthead" style="background-image: url('assets/img/birdseye.jpg')">
         <div class="container position-relative px-4 px-lg-5">
@@ -58,11 +76,11 @@
             <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
                 <li class="nav-item" role="presentation">
                     <a class="nav-link active" id="tab-login" data-bs-toggle="pill" href="#pills-login" role="tab"
-                    aria-controls="pills-login" aria-selected="true">Prijava</a>
+                        aria-controls="pills-login" aria-selected="true">Prijava</a>
                 </li>
                 <li class="nav-item" role="presentation">
                     <a class="nav-link" id="tab-register" data-bs-toggle="pill" href="#pills-register" role="tab"
-                    aria-controls="pills-register" aria-selected="false">Registracija</a>
+                        aria-controls="pills-register" aria-selected="false">Registracija</a>
                 </li>
             </ul>
             <!-- Pills navs -->
@@ -75,14 +93,14 @@
 
                         <!-- Email input -->
                         <div class="form-outline mb-4">
-                            <input type="email" id="loginName" class="form-control" name="loginEmail"/>
+                            <input type="email" id="loginName" class="form-control" name="loginEmail" />
                             <label class="form-label" for="loginName">Email</label>
                             <!-- ili korisničko ime -->
                         </div>
 
                         <!-- Password input -->
                         <div class="form-outline mb-4">
-                            <input type="password" id="loginPassword" class="form-control" name="loginPass"/>
+                            <input type="password" id="loginPassword" class="form-control" name="loginPass" />
                             <label class="form-label" for="loginPassword">Lozinka</label>
                         </div>
 
@@ -92,18 +110,20 @@
                                 <button type="submit" class="btn btn-primary btn-block mb-4">Prijavi se</button>
                             </div>
                             <div class="p-2">
-                                <a data-bs-toggle="modal" data-bs-target="#forgotPassword" href="">Zaboravili lozinku?</a>
+                                <a data-bs-toggle="modal" data-bs-target="#forgotPassword" href="">Zaboravili
+                                    lozinku?</a>
                             </div>
                         </div>
 
                     </form>
-                    
+
                     <div class="modal fade" id="forgotPassword" tabindex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" class="post-subtitle" id="exampleModalLabel">Zaboravili lozinku?</h5>
+                                    <h5 class="modal-title" class="post-subtitle" id="exampleModalLabel">Zaboravili
+                                        lozinku?</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
@@ -116,7 +136,8 @@
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zatvori</button>
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Zatvori</button>
                                         <button type="submit" class="btn btn-primary">Posalji email za reset</button>
                                     </div>
                                 </form>
@@ -131,32 +152,32 @@
 
                         <!-- Name input -->
                         <div class="form-outline mb-4">
-                            <input type="text" id="registerName" class="form-control" name="registerName"/>
+                            <input type="text" id="registerName" class="form-control" name="registerName" />
                             <label class="form-label" for="registerName">Ime</label>
                         </div>
 
                         <!-- Username input -->
                         <div class="form-outline mb-4">
-                            <input type="text" id="registerLastName" class="form-control" name="registerLastName"/>
+                            <input type="text" id="registerLastName" class="form-control" name="registerLastName" />
                             <label class="form-label" for="registerLastName">Prezime</label>
                         </div>
 
                         <!-- Email input -->
                         <div class="form-outline mb-4">
-                            <input type="email" id="registerEmail" class="form-control" name="registerEmail"/>
+                            <input type="email" id="registerEmail" class="form-control" name="registerEmail" />
                             <label class="form-label" for="registerEmail">Email</label>
                         </div>
 
                         <!-- Password input -->
                         <div class="form-outline mb-4">
-                            <input type="password" id="firstPass" class="form-control" name="firstPass"/>
+                            <input type="password" id="firstPass" class="form-control" name="firstPass" />
                             <label class="form-label" for="firstPass">Nova lozinka</label>
                         </div>
 
                         <!-- Confirm password input -->
                         <div class="form-outline mb-4">
-                            <input type="password" id="secondPass" class="form-control" name="secondPass"/>
-                            <label class="form-label" for="secondPass">Nova lozinka</label>
+                            <input type="password" id="secondPass" class="form-control" name="secondPass" />
+                            <label class="form-label" for="secondPass">Ponovi lozinku</label>
                         </div>
 
                         <!-- Submit button -->
@@ -165,11 +186,11 @@
                 </div>
             </div>
             <!-- Pills content -->
-    
+
         </div>
     </div>
     <!-- Footer file -->
-    <?php include_once('includes/footer.php')?>
+    <?php include_once('includes/footer.php') ?>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
