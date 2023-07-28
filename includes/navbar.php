@@ -11,6 +11,7 @@ require_once('protected/redirect.inc.php');
             Menu
             <i class="fas fa-bars"></i>
         </button>
+        
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto py-4 py-lg-0">
                 <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="dogadaji.php">Događaji</a></li>
@@ -26,7 +27,9 @@ require_once('protected/redirect.inc.php');
                 </a>
 
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <li><a class="dropdown-item" href="en/<?= redirectTranslation(basename($_SERVER['PHP_SELF'])); ?>"><img src="assets/img/Flags/us.svg" alt="" style="height:1.5em; width:auto;">&ensp;English</a>
+                    <li><a class="dropdown-item"
+                            href="en/<?= redirectTranslation(basename($_SERVER['PHP_SELF'])); ?>"><img
+                                src="assets/img/Flags/us.svg" alt="" style="height:1.5em; width:auto;">&ensp;English</a>
                     </li>
 
                 </ul>

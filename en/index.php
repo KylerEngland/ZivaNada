@@ -25,7 +25,7 @@
   <link href="../css/cover.css" rel="stylesheet" />
 </head>
 
-<body style="background-image: url('../assets/img/riva.jpg');">
+<body style="background-image: url('../assets/img/Backgrounds/IMG_0145.jpg');">
 
   <?php include_once('includes/navbar.php'); ?>
 

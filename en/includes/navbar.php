@@ -11,9 +11,10 @@ require_once('../protected/redirect.inc.php');
             Menu
             <i class="fas fa-bars"></i>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto py-4 py-lg-0">
-            <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="osoblje.php">Staff</a></li>
+                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="osoblje.php">Staff</a></li>
                 <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="vrijednosti.php">Core Values</a></li>
                 <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="lokacija.php">Location</a></li>
             </ul>
@@ -24,9 +25,11 @@ require_once('../protected/redirect.inc.php');
                 </a>
 
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <li><a class="dropdown-item" href="../<?= redirectTranslation(basename($_SERVER['PHP_SELF'])); ?>"><img
-                                src="../assets/img/Flags/hr.svg" alt=""
-                                style="height:1.5em; width:auto;">&ensp;Hrvatski</a></li>
+                    <li>
+                        <a class="dropdown-item"href="../<?= redirectTranslation(basename($_SERVER['PHP_SELF'])); ?>">
+                            <img src="../assets/img/Flags/hr.svg" alt="" style="height:1.5em; width:auto;">&ensp;Hrvatski
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>

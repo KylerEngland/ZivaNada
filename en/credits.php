@@ -108,7 +108,7 @@
 
                 <!-- Four columns with backgrounds and their credits -->
                 <div class="row credits">
-                    <div class="col-sm">
+                    <!-- <div class="col-sm">
                         <img src="../assets/img/Split.jpg" alt="" class="img-fluid mb-4 mb-lg-0"
                             style="height:50%; width:auto;">
                         <p>Luciann Photography</p>
@@ -143,7 +143,7 @@
                         <p><a class="btn btn-secondary btn-sm" href="https://unsplash.com/photos/O3nh4XGtPAI"
                                 target="_blank">View details
                                 &raquo;</a></p>
-                    </div>
+                    </div> -->
                 </div>
 
             </div>

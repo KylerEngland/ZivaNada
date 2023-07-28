@@ -26,7 +26,7 @@
 
 </head>
 
-<body style="background-image: url('assets/img/riva.jpg');">
+<body style="background-image: url('assets/img/Backgrounds/IMG_0145.jpg');">
 
     <?php include_once('includes/navbar.php'); ?>
     <div class="middle-text">
