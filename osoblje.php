@@ -61,14 +61,14 @@ session_start();
                                         jednostavan i razumljiv način.
                                     </p>
                                 </div>
-                                <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2 text-center"><img
-                                        src="assets/img/Staff/placeholder.png" alt="" class="img-fluid mb-4 mb-lg-0">
+                                <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2 text-center">
+                                    <img src="assets/img/Staff/IMG_0270.jpg" alt="assets/img/Staff/placeholder.png" class="img-fluid mb-4 mb-lg-0">
                                 </div>
                             </div>
                             <hr>
                             <div class="row align-items-center">
                                 <div class="col-lg-5 px-5 mx-auto text-center">
-                                    <img src="assets/img/Staff/placeholder.png" alt="" class="img-fluid mb-4 mb-lg-0">
+                                    <img src="assets/img/Staff/IMG_0222.jpg" alt="assets/img/Staff/placeholder.png" class="img-fluid mb-4 mb-lg-0">
                                 </div>
                                 <div class="col-lg-6">
                                     <h2 class="fw-bold">HELGA</h2>
@@ -97,7 +97,7 @@ session_start();
                                     </p>
                                 </div>
                                 <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2 text-center"><img
-                                        src="assets/img/Staff/placeholder.png" alt="" class="img-fluid mb-4 mb-lg-0">
+                                        src="assets/img/Staff/IMG_0232.jpg" alt="assets/img/Staff/placeholder.png" class="img-fluid mb-4 mb-lg-0">
                                 </div>
                             </div>
                             <hr>
@@ -137,7 +137,7 @@ session_start();
                             <hr>
                             <div class="row align-items-center">
                                 <div class="col-lg-5 px-5 mx-auto text-center">
-                                    <img src="assets/img/Staff/placeholder.png" alt="" class="img-fluid mb-4 mb-lg-0">
+                                    <img src="assets/img/Staff/IMG_0242.jpg" alt="assets/img/Staff/placeholder.png" class="img-fluid mb-4 mb-lg-0">
                                 </div>
                                 <div class="col-lg-6">
                                     <h2 class="fw-bold">JELENA & DUJE</h2>
@@ -164,7 +164,7 @@ session_start();
                                     </p>
                                 </div>
                                 <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2 text-center"><img
-                                        src="assets/img/Staff/placeholder.png" alt="" class="img-fluid mb-4 mb-lg-0">
+                                        src="assets/img/Staff/IMG_0262.jpg" alt="assets/img/Staff/placeholder.png" class="img-fluid mb-4 mb-lg-0">
                                 </div>
                             </div>
                             <hr>
