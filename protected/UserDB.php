@@ -47,7 +47,7 @@ class UserDB{
                 $statement->bindParam(':email', $email);
 
                 $statement->execute();
-                echo 'You have successfully registered, you can now login!';
+                // echo 'You have successfully registered, you can now login!';
             }
         }
         catch(PDOException $e){
