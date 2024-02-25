@@ -62,30 +62,17 @@ session_start();
                                     </p>
                                 </div>
                                 <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2 text-center">
-                                    <img src="assets/img/Staff/IMG_0270.jpg" alt="assets/img/Staff/placeholder.png" class="img-fluid mb-4 mb-lg-0">
+                                    <img src="assets/img/Staff/IMG_0270.jpg" alt="assets/img/Staff/placeholder.png"
+                                        class="img-fluid mb-4 mb-lg-0">
                                 </div>
                             </div>
                             <hr>
                             <div class="row align-items-center">
                                 <div class="col-lg-5 px-5 mx-auto text-center">
-                                    <img src="assets/img/Staff/IMG_0222.jpg" alt="assets/img/Staff/placeholder.png" class="img-fluid mb-4 mb-lg-0">
+                                    <img src="assets/img/Staff/IMG_0232.jpg" alt="assets/img/Staff/placeholder.png"
+                                        class="img-fluid mb-4 mb-lg-0">
                                 </div>
                                 <div class="col-lg-6">
-                                    <h2 class="fw-bold">HELGA</h2>
-                                    <h2 class="fw-light fst-italic">Služba slavljenja</h2>
-                                    <p class="text-muted mb-4">
-                                        Organizira tim za slavljenje koji se sastoji od 9 ljudi, probe za pjevanje kao i
-                                        večeri slavljenja. Kroz pjesmu i obožavanje Helga se najbolje povezuje s Isusom
-                                        te taj osjećaj želi podijeliti s drugima.
-
-                                    </p>
-                                </div>
-                            </div>
-                            <hr>
-                        </div>
-                        <div class="container py-5">
-                            <div class="row align-items-center mb-5">
-                                <div class="col-lg-6 order-2 order-lg-1">
                                     <h2 class="fw-bold">MIJO</h2>
                                     <h2 class="fw-light fst-italic">Knjigovođa/Molitvena služba/Sastanci za muškarce
                                     </h2>
@@ -96,8 +83,22 @@ session_start();
                                         Crkve.
                                     </p>
                                 </div>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="container py-5">
+                            <div class="row align-items-center mb-5">
+                                <div class="col-lg-6 order-2 order-lg-1">
+                                    <h2 class="fw-bold">SNJEŽA</h2>
+                                    <h2 class="fw-light fst-italic">Služba za brigu crkvenog prostora</h2>
+                                    <p class="text-muted mb-4">
+                                        Želi služiti drugima i pružiti im ugodan crkveni prostor. Prostor koji koristimo
+                                        je potrebno održavati čistim i urednim kako bi ga mogli koristiti za slavu
+                                        Božju.
+                                    </p>
+                                </div>
                                 <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2 text-center"><img
-                                        src="assets/img/Staff/IMG_0232.jpg" alt="assets/img/Staff/placeholder.png" class="img-fluid mb-4 mb-lg-0">
+                                        src="assets/img/Staff/placeholder.png" alt="" class="img-fluid mb-4 mb-lg-0">
                                 </div>
                             </div>
                             <hr>
@@ -122,24 +123,6 @@ session_start();
                         <div class="container py-5">
                             <div class="row align-items-center mb-5">
                                 <div class="col-lg-6 order-2 order-lg-1">
-                                    <h2 class="fw-bold">SNJEŽA</h2>
-                                    <h2 class="fw-light fst-italic">Služba za brigu crkvenog prostora</h2>
-                                    <p class="text-muted mb-4">
-                                        Želi služiti drugima i pružiti im ugodan crkveni prostor. Prostor koji koristimo
-                                        je potrebno održavati čistim i urednim kako bi ga mogli koristiti za slavu
-                                        Božju.
-                                    </p>
-                                </div>
-                                <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2 text-center"><img
-                                        src="assets/img/Staff/placeholder.png" alt="" class="img-fluid mb-4 mb-lg-0">
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="row align-items-center">
-                                <div class="col-lg-5 px-5 mx-auto text-center">
-                                    <img src="assets/img/Staff/IMG_0242.jpg" alt="assets/img/Staff/placeholder.png" class="img-fluid mb-4 mb-lg-0">
-                                </div>
-                                <div class="col-lg-6">
                                     <h2 class="fw-bold">JELENA & DUJE</h2>
                                     <h2 class="fw-light fst-italic">Dječja služba</h2>
                                     <p class="text-muted mb-4">
@@ -149,26 +132,47 @@ session_start();
                                         Božjeg Kraljevstva.
                                     </p>
                                 </div>
+                                <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2 text-center"><img
+                                        src="assets/img/Staff/IMG_0242.jpg" alt="assets/img/Staff/placeholder.png"
+                                        class="img-fluid mb-4 mb-lg-0">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row align-items-center">
+                                <div class="col-lg-5 px-5 mx-auto text-center">
+                                    <img src="assets/img/Staff/IMG_0262.jpg" alt="assets/img/Staff/placeholder.png"
+                                        class="img-fluid mb-4 mb-lg-0">
+                                </div>
+                                <div class="col-lg-6">
+                                    <h2 class="fw-bold">ALEN</h2>
+                                    <h2 class="fw-light fst-italic">Dio crkvenog odbora</h2>
+                                    <p class="text-muted mb-4">
+                                    Sudjeluje u radu odbora i vodi bogoštovlje. Mir s Bogom je donio smisao i
+                                        preobrazbu njegovom životu i od tada ima želju da mnogi dožive isto i budu
+                                        sudionici iskrenog i predanog zajedništva.
+                                    </p>
+                                </div>
                             </div>
                             <hr>
                         </div>
                         <div class="container py-5">
                             <div class="row align-items-center mb-5">
                                 <div class="col-lg-6 order-2 order-lg-1">
-                                    <h2 class="fw-bold">ALEN</h2>
-                                    <h2 class="fw-light fst-italic">Dio crkvenog odbora</h2>
+                                    <h2 class="fw-bold">SLAĐANA</h2>
+                                    <h2 class="fw-light fst-italic">Ženski sastanci</h2>
                                     <p class="text-muted mb-4">
-                                        Sudjeluje u radu odbora i vodi bogoštovlje. Mir s Bogom je donio smisao i
-                                        preobrazbu njegovom životu i od tada ima želju da mnogi dožive isto i budu
-                                        sudionici iskrenog i predanog zajedništva.
+                                    Želja joj je da se žene međusobno povezuju i ohrabruju. Vodi grupu koja se zove
+                                        Vrsne žene, te organizira sastanke i razna okupljanja. Trku koju trči s Isusom
+                                        želi istrčati do kraja sa sestrama u Kristu.
                                     </p>
                                 </div>
                                 <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2 text-center"><img
-                                        src="assets/img/Staff/IMG_0262.jpg" alt="assets/img/Staff/placeholder.png" class="img-fluid mb-4 mb-lg-0">
+                                src="assets/img/Staff/placeholder.png" alt="assets/img/Staff/placeholder.png"
+                                        class="img-fluid mb-4 mb-lg-0">
                                 </div>
                             </div>
-                            <hr>
-                            <div class="row align-items-center">
+                            <!-- <hr> -->
+                            <!-- <div class="row align-items-center">
                                 <div class="col-lg-5 px-5 mx-auto text-center">
                                     <img src="assets/img/Staff/placeholder.png" alt="" class="img-fluid mb-4 mb-lg-0">
                                 </div>
@@ -176,9 +180,11 @@ session_start();
                                     <h2 class="fw-bold">SLAĐANA</h2>
                                     <h2 class="fw-light fst-italic">Ženski sastanci</h2>
                                     <p class="text-muted mb-4">
-                                    Želja joj je da se žene međusobno povezuju i ohrabruju. Vodi grupu koja se zove Vrsne žene, te organizira sastanke i razna okupljanja. Trku koju trči s Isusom želi istrčati do kraja sa sestrama u Kristu.                                   </p>
+                                        Želja joj je da se žene međusobno povezuju i ohrabruju. Vodi grupu koja se zove
+                                        Vrsne žene, te organizira sastanke i razna okupljanja. Trku koju trči s Isusom
+                                        želi istrčati do kraja sa sestrama u Kristu. </p>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>

@@ -90,7 +90,7 @@ session_start();
                         <div class="container py-5">
                             <div class="row align-items-center mb-5">
                                 <div class="col-lg-6 order-2 order-lg-1">
-                                    <h2 class="fw-light">Evangelizacija</h2>
+                                    <h2 class="fw-bold">Evangelizacija</h2>
                                     <p class="fst-italic text-muted mb-4">
                                         Bog je toliko ljubio svijet da je dao svog Sina jedinca da ne umre nitko
                                         tko u Njega vjeruje nego da ima vječni život. Važno nam je navjestiti ovu
@@ -108,7 +108,7 @@ session_start();
                                     <img src="assets/img/Values/acceptance3.png" alt="" class="img-fluid mb-4 mb-lg-0">
                                 </div>
                                 <div class="col-lg-6">
-                                    <h2 class="fw-light">Prihvaćanje</h2>
+                                    <h2 class="fw-bold">Prihvaćanje</h2>
                                     <p class="fst-italic text-muted mb-4">
                                         Bog nas je bezuvjetno prihvatio kroz žrtvu Isusa Krista.
                                         Budući da smo prihvaćeni po Božjoj milosti, a ne po našim djelima,
@@ -123,7 +123,7 @@ session_start();
                         <div class="container py-5">
                             <div class="row align-items-center mb-5">
                                 <div class="col-lg-6 order-2 order-lg-1">
-                                    <h2 class="fw-light">Obitelj</h2>
+                                    <h2 class="fw-bold">Obitelj</h2>
                                     <p class="fst-italic text-muted mb-4">
                                         Obitelj je u središtu Božjeg nauma za čovjeka.
                                         Kao takva ona je mjesto gdje možemo iskusiti ljubav, povezanost,
@@ -140,7 +140,7 @@ session_start();
                                     <img src="assets/img/Values/serving.png" alt="" class="img-fluid mb-4 mb-lg-0">
                                 </div>
                                 <div class="col-lg-6">
-                                    <h2 class="fw-light">Uključenost</h2>
+                                    <h2 class="fw-bold">Uključenost</h2>
                                     <p class="fst-italic text-muted mb-4">
                                         Svi vjernici su pozvani sudjelovati u životu Crkve.
                                         Potičemo uključenost svakog pojedinca u različite službe unutar Crkve,

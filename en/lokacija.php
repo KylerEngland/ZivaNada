@@ -82,7 +82,7 @@
                             firstParking.addTo(map);
                             firstParking.bindPopup("<p>When you park your car, head west (towards McDonald's). You will notice an uphill slope behind the area used for outdoor seating. Head for the up the hill, and n your right side you will notice metal stairs. Those will lead you to parking A. When you reach the top of the stairs continue straight a few meters. On your left you will find the main entrance of the church (south) which is marked with the inscription Živa Nada.</p><br><a href='https://maps.app.goo.gl/snQsGnhTYEZb2tje6' target='_blank'>Google karta</a>");
 
-                            const secondParking = L.marker([43.512203, 16.480561]).addTo(map);
+                            const secondParking = L.marker([43.512203, 16.480561]);
                             secondParking.bindPopup("<p>After you park, head west (turn left from the parking lot). Then walk straight to the first turn to the left that takes you to the T intersection. From this intersection, walk straight about 80 meters to the south (to a blue and white building). Then turn left and continue straight through the passage. When you pass the passage, take another left, and walk a few meters straight. On your left, you will find the main entrance of the church (south), which is marked with the inscription Živa Nada.</p><br><a href='https://maps.app.goo.gl/AUcGCYMePghfFem46' target='_blank'>Google karta</a>");
 
                             const thirdParking = L.marker([43.511114, 16.480528]).addTo(map);

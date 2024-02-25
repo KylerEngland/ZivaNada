@@ -84,7 +84,7 @@
                         <div class="container py-5">
                             <div class="row align-items-center mb-5">
                                 <div class="col-lg-6 order-2 order-lg-1">
-                                    <h2 class="fw-light">Evangelizing</h2>
+                                    <h2 class="fw-bold">Evangelizing</h2>
                                     <p class="fst-italic text-muted mb-4">
                                         God loved the world so much that He gave His only Son so that no one who
                                         believes in Him should die but have eternal life. It is important for us to
@@ -103,7 +103,7 @@
                                         class="img-fluid mb-4 mb-lg-0">
                                 </div>
                                 <div class="col-lg-6">
-                                    <h2 class="fw-light">Acceptance</h2>
+                                    <h2 class="fw-bold">Acceptance</h2>
                                     <p class="fst-italic text-muted mb-4">
                                         God accepted us unconditionally through the sacrifice of Jesus Christ. Because
                                         we are accepted by God's grace and not by our actions, we welcome others,
@@ -117,7 +117,7 @@
                         <div class="container py-5">
                             <div class="row align-items-center mb-5">
                                 <div class="col-lg-6 order-2 order-lg-1">
-                                    <h2 class="fw-light">Family</h2>
+                                    <h2 class="fw-bold">Family</h2>
                                     <p class="fst-italic text-muted mb-4">
                                         The family is at the heart of God's plan for man. As such, it is a place where
                                         we can experience love, connection, understanding, but also a place of spiritual
@@ -136,7 +136,7 @@
                                     <img src="../assets/img/Values/serving.png" alt="" class="img-fluid mb-4 mb-lg-0">
                                 </div>
                                 <div class="col-lg-6">
-                                    <h2 class="fw-light">Involvement</h2>
+                                    <h2 class="fw-bold">Involvement</h2>
                                     <p class="fst-italic text-muted mb-4">
                                         All believers are called to participate in the life of the Church. We encourage
                                         the involvement of each individual in the various ministries within the Church,

@@ -85,7 +85,7 @@ session_start();
                             firstParking.addTo(map);
                             firstParking.bindPopup("<p>Kada parkirate svoj auto uputite se prema zapadu (McDonaldu). Primijetit čete uzbrdicu iza prostora koji služi za sjedenje na otvorenom. Krenite prema uzbrdici i počnite se uspinjati. S vaše desne strane čete uočit metalne stepenice, koje vas vode do parkinga A. Kada dođete do vrha stepenica nastavite ravno nekoliko metara. Na vašoj lijevoj strani pronaći čete glavni ulaz crkve (jug) koji je označen natpisom Živa Nada.</p><br><a href='https://maps.app.goo.gl/snQsGnhTYEZb2tje6' target='_blank'>Google karta</a>");
 
-                            const secondParking = L.marker([43.512203, 16.480561]).addTo(map);
+                            const secondParking = L.marker([43.512203, 16.480561]);
                             secondParking.bindPopup("<p>Kada parkirate svoj auto, uputite se prema zapadu (skrenite lijevo s parkinga). Zatim hodajte ravno do prvog skretanja u lijevo koje vas vodi na T raskrižje. Sa ovog raskrižja hodajte ravno cca 80 m prema jugu (plavo - bijeloj zgradi). Potom skrenite u lijevo i nastavite ravno kroz prolaz. Kada prođete prolaz ponovo skrenite u lijevo, hodajte nekoliko metara ravno. Na vašoj lijevoj strani pronaći čete glavni ulaz crkve (jug) koji je označen natpisom Živa Nada.</p><br><a href='https://maps.app.goo.gl/AUcGCYMePghfFem46' target='_blank'>Google karta</a>");
 
                             const thirdParking = L.marker([43.511114, 16.480528]).addTo(map);
